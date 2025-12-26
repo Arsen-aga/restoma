@@ -1,0 +1,67 @@
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    align-items: start;
+  }
+
+  &__info-block {
+    margin-left: 60px;
+
+    @include xl {
+        margin-left: 15px;
+    }
+
+    @include lg {
+        display: none;
+    }
+  }
+
+  &__yandex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 38px;
+
+    @include xl {
+        margin: 0 10px;
+    }
+
+    @include lg {
+        margin-left: auto;
+    }
+
+    @include md {
+        display: none;
+    }
+  }
+
+  &__yandex-img{
+    @include xl {
+        max-width: 95px;
+    }
+  }
+
+  &__yandex,
+  &__info-block,
+  &__logo {
+    margin-top: 10px;
+  }
+
+  &__social-block{
+    @include md {
+        margin-left: auto;
+    }
+  }
+
+  .social-block__whatsapp{
+    @include xs {
+        display: none;
+    }
+  }
+}

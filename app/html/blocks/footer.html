@@ -1,0 +1,36 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      @@include('../components/logo.html', {"color": "black"})
+      @@include('../components/info-block.html', {"class": "footer__info-block"})
+      <div class="footer__right social-block">
+        <div class="footer__social">
+          @@include('../components/social-block.html', {"class": "footer__social-block", "phone-class": "footer__phone"})
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider footer__divider"></div>
+  <div class="container">
+    <div class="footer__bottom">
+      <a class="footer__link _link-hover" href="#politics" data-fancybox>
+        Политика конфиденциальности
+      </a>
+      <a class="footer__tfa" href="#" target="_blank">
+        <!-- @@include('../../images/icons/tfa.svg') -->
+        <span>Разработка сайта</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</div>
+@@include('modals.html')
+
+
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

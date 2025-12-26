@@ -1,0 +1,24 @@
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
+@import '../../node_modules/swiper/swiper-bundle';
+
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/containers';
+@import 'base/sticky-footer';
+@import 'base/base';
+@import 'base/titles';
+
+
+@import 'blocks/header';
+@import 'blocks/front-block';
+@import 'blocks/quiz';
+@import 'blocks/map-block';
+@import 'blocks/front-block-2';
+@import 'blocks/wait';
+@import 'blocks/modals';
+
+
+@import 'blocks/footer';
+

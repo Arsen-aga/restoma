@@ -1,0 +1,42 @@
+<section class="map-block">
+  <div class="container">
+    <h2 class="map-block__title">
+      Получите схему проезда<br>
+      и все контакты себе на телефон
+    </h2>
+  </div>
+  <div class="map-block__inner relative">
+    <div class="map-block__map" id="map"></div>
+    <div class="container">
+      <form class="map-block__form form-submit" method="POST" action="#" enctype="multipart/form-data">
+        <input type="hidden" name="from" class="from" value="Закажите обратный звонок">
+        <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+        <h4 class="map-block__form-title">
+          Заполните<br>
+          форму ниже,
+        </h4>
+        <p class="map-block__form-subtitle">
+          чтобы получить подробную<br>
+          схему проезда в WhatsApp
+        </p>
+        <div class="map-block__form-inner">
+          <input class="_input map-block__form-inp" type="tel" name="phone" placeholder="Введите номер телефона">
+          <button class="map-block__form-btn _whatsapp-btn" type="submit">
+            Получить схему проезда<br>
+            и все контакты себе в WhatsApp
+          </button>
+        </div>
+        <label class="checkbox-block">
+          <input type="checkbox" name="access" required>
+          <span class="checkbox-block__check">
+            <!-- @@include('../../images/icons/check.svg') -->
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия <a href="#politics" data-fancybox="">политики конфиденциальности</a>
+          </span>
+          </label>
+      </form>
+
+    </div>
+  </div>
+</section>

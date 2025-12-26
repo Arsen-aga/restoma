@@ -1,0 +1,41 @@
+new Swiper(".pasting__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  breakpoints: {
+    1230: {
+      slidesPerView: 2.77,
+    },
+    991.8: {
+      slidesPerView: 2.3,
+    },
+    767.98: {
+      slidesPerView: 2,
+    },
+    468: {
+      slidesPerView: 1.6,
+    },
+  },
+});
+new Swiper(".technological-approach__swiper", {
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".technological-approach__swiper-wrapper .swiper-button-next",
+    prevEl: ".technological-approach__swiper-wrapper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    575.98: {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+    },
+  },
+});

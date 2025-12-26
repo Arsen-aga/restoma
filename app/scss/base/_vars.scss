@@ -1,0 +1,62 @@
+:root {
+  // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
+
+  // контейнер
+  --container-width: 1200px;
+  --container-lg-width: 1600px;
+  --container-padding: 15px;
+
+  // шрифты
+  --font-default: 'Onest';
+  --font-titles: var(--font-default);
+
+  // размер шрифта
+  --defaul-font-size: 16px;
+  --defaul-line-height: calc(24/16*100%);
+
+  // брекпоинты
+  --xl: 1230px;
+  --lg: 991.8px;
+  --md: 767.98px;
+  --sm: 575.98px;
+  --xs: 468px;
+
+  // глобаьлные цвета
+  --page-bg: #121212;
+  --default-color: #0A0F13;
+  --link-color: #464451;
+
+
+  // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
+
+  --primary: #F52D3A;
+  --primary-hover: #FF404C;
+  --light-color: #FFFFFF;
+  --accent: #027FFF;
+  --accent-hover: #2E95FF;
+  --whatsapp-color: #25D366;
+  --whatsapp-hover: #2DE873;
+  
+  
+  --telegram-color: #0c1012;
+  --telegram-hover: #54C0F8;
+  --dark: #000000;
+  --gray: #C0C0C0;
+  
+
+  // Отступы для блоков
+  --indent: 120px;
+
+  @media (max-width: 1230px) {
+    --indent: 80px;
+  }
+  @media (max-width: 991.8px) {
+    --indent: 40px;
+  }
+
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

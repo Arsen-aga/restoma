@@ -1,0 +1,43 @@
+/* Контейнеры */
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  width: 100%;
+}
+.container-lg {
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  max-width: calc(var(--container-lg-width) + var(--container-padding) * 2);
+  width: 100%;
+}
+
+@include xl {
+
+  .container {
+    max-width: 970px;
+  }
+
+}
+
+@include lg {
+
+  .container {
+    max-width: 750px;
+  }
+}
+
+@include md {
+
+  .container {
+    max-width: 540px;
+    padding-inline: 15px;
+  }
+}
+
+@include sm {
+
+  .container {
+    max-width: 100%;
+  }
+}

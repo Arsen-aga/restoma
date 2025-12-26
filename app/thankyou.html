@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <meta content="images/social.png" property="og:image">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="body_wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo header__logo" href="/">
+  
+  <p class="logo__text">
+    Детейлинг студия
+  </p>
+</a>
+          <div class="info-block header__info-block">
+  <a class="info-block__map" href="https://yandex.ru/maps/-/CHSomX4S" target="_blank">
+    <img class="info-block__map-img" src="images/info-block-map.webp" alt="info-block">
+    <p class="info-block__map-text">
+      Выборгское ш., 212,<br>
+      корп. 12А
+    </p>
+  </a>
+  <div class="info-block__parnas">
+    
+    <p class="info-block__parnas-text">
+      Парнас
+    </p>
+  </div>
+</div>
+          <div class="header__yandex">
+            <img class="header__yandex-img" src="images/yandex-1.webp" alt="yandex-1">
+            <img class="header__yandex-img" src="images/yandex-2.webp" alt="yandex-2">
+          </div>
+          <div class="social-block header__social-block">
+  <a class="social-block__link social-block__whatsapp" href="https://wa.me/+79031003195">
+    
+  </a>
+  <div class="phone-block social-block__phone" >
+  <a class="phone-block__top" href="tel:+79009996863">
+    +7 900 999 68 63
+  </a>
+  <a class="phone-block__link @@phone-class" href="#callback" data-fancybox="">
+    Перезвоним за 1 минуту
+  </a>
+</div>
+</div>
+        </div>
+      </div>
+    </header>
+<main class="main" id="thankyou">
+  <section class="front-block-2 _image-wrapper relative">
+  <div class="overlay"></div>
+  <div class="container relative">
+    <h2 class="front-block-2__title _title">
+      Все прошло успешно!
+    </h2>
+    <p class="front-block-2__subtitle">
+      Для более полной оценки объема<br>
+      работ специалисту необходимо задать<br>
+      вам несколько уточняющих вопросов
+    </p>
+    <div class="front-block-2__info">
+      
+      <p class="front-block-2__info-text">
+        Пожалуйста, проверьте корректность<br>
+        введенного вами номера телефона
+      </p>
+    </div>
+    <div class="front-block-2__bottom">
+      <p class="_input front-block-2__number">
+        +7 999 610 77 89
+      </p>
+      <a class="front-block-2__btn _main-btn" href="#change-number" data-fancybox>
+        Нашел ошибку в номере,<br>
+        хочу ввести корректный
+      </a>
+    </div>
+  </div>
+</section>
+  <section class="wait">
+  <div class="container">
+    <h2 class="wait__title _title">
+      Не хотите ждать или<br>
+      есть срочный вопрос?
+    </h2>
+    <p class="wait__subtitle _subtitle">
+      Задайте ваши вопросы специалисту прямо сейчас<br>
+      по телефону или написать в мессенджер
+    </p>
+    <div class="wait__inner">
+      <a class="wait__link" href="tel:+79031003195">
+        
+        <span>+7 900 999 68 63</span>
+      </a>
+      <a class="wait__btn _whatsapp-btn" href="https://wa.me/+79031003195" target="_blank">
+        <span>Написать в WhatsApp</span>
+        
+      </a>
+    </div>
+  </div>
+</section>
+  <div class="divider"></div>
+  <section class="map-block">
+  <div class="container">
+    <h2 class="map-block__title">
+      Получите схему проезда<br>
+      и все контакты себе на телефон
+    </h2>
+  </div>
+  <div class="map-block__inner relative">
+    <div class="map-block__map" id="map"></div>
+    <div class="container">
+      <form class="map-block__form form-submit" method="POST" action="#" enctype="multipart/form-data">
+        <input type="hidden" name="from" class="from" value="Закажите обратный звонок">
+        <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+        <h4 class="map-block__form-title">
+          Заполните<br>
+          форму ниже,
+        </h4>
+        <p class="map-block__form-subtitle">
+          чтобы получить подробную<br>
+          схему проезда в WhatsApp
+        </p>
+        <div class="map-block__form-inner">
+          <input class="_input map-block__form-inp" type="tel" name="phone" placeholder="Введите номер телефона">
+          <button class="map-block__form-btn _whatsapp-btn" type="submit">
+            Получить схему проезда<br>
+            и все контакты себе в WhatsApp
+          </button>
+        </div>
+        <label class="checkbox-block">
+          <input type="checkbox" name="access" required>
+          <span class="checkbox-block__check">
+            
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия <a href="#politics" data-fancybox="">политики конфиденциальности</a>
+          </span>
+          </label>
+      </form>
+
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="logo @@class" href="/">
+  
+  <p class="logo__text">
+    Детейлинг студия
+  </p>
+</a>
+      <div class="info-block footer__info-block">
+  <a class="info-block__map" href="https://yandex.ru/maps/-/CHSomX4S" target="_blank">
+    <img class="info-block__map-img" src="images/info-block-map.webp" alt="info-block">
+    <p class="info-block__map-text">
+      Выборгское ш., 212,<br>
+      корп. 12А
+    </p>
+  </a>
+  <div class="info-block__parnas">
+    
+    <p class="info-block__parnas-text">
+      Парнас
+    </p>
+  </div>
+</div>
+      <div class="footer__right social-block">
+        <div class="footer__social">
+          <div class="social-block footer__social-block">
+  <a class="social-block__link social-block__whatsapp" href="https://wa.me/+79031003195">
+    
+  </a>
+  <div class="phone-block social-block__phone" >
+  <a class="phone-block__top" href="tel:+79009996863">
+    +7 900 999 68 63
+  </a>
+  <a class="phone-block__link footer__phone" href="#callback" data-fancybox="">
+    Перезвоним за 1 минуту
+  </a>
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider footer__divider"></div>
+  <div class="container">
+    <div class="footer__bottom">
+      <a class="footer__link _link-hover" href="#politics" data-fancybox>
+        Политика конфиденциальности
+      </a>
+      <a class="footer__tfa" href="#" target="_blank">
+        
+        <span>Разработка сайта</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<div id="politics" style="display: none;" class="politics-modal fancybox__content">
+  <div class="modal__container">
+    <h3 class="politics-modal__title">Политика конфиденциальности</h3>
+    <div class="politics-modal__text">
+      <p>
+        Администрация данного Сайта не&nbsp;может передать или раскрыть информацию предоставленную пользователем
+        (далее Пользователь) при регистрации и&nbsp;использовании функций сайта третьим лицам, кроме случаев,
+        описанных законодательством страны, на&nbsp;территории которой пользователь ведет свою деятельность.
+      </p>
+      <p>
+        Для регистрации на&nbsp;сайте, пользователь обязан внести некоторую персональную информацию. Для проверки
+        предоставленных данных, сайт оставляет за&nbsp;собой право потребовать доказательства идентичности
+        в&nbsp;онлайн или офлайн режимах.
+      </p>
+      <p>
+        Сайт использует личную информацию Пользователя для обслуживания и&nbsp;для улучшения качества
+        предоставляемых услуг. Часть персональной информации может быть предоставлена банку или платежной системе,
+        в&nbsp;случае, если предоставление этой информации обусловлено процедурой перевода средств платежной
+        системе, услугами которой Пользователь желает воспользоваться.
+      </p>
+      <p>
+        Сайт прилагает все усилия для сбережения в&nbsp;сохранности личных данных Пользователя.
+        Личная информация может быть раскрыта в&nbsp;случаях, описанных законодательством, либо
+        когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного
+        распоряжения или легального процесса необходимого для работы Пользователя с&nbsp;Сайтом.
+      </p>
+      <p>
+        В&nbsp;других случаях, ни&nbsp;при каких условиях, информация, которую Пользователь передает Сайту,
+        не&nbsp;будет раскрыта третьим лицам.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="popup big-popup " id="callback" style="display: none;">
+  <div class="popup__inner big-popup__inner _image-wrapper">
+    <div class="popup__left big-popup__left">
+      <div class="popup__manager">
+        <div class="popup__manager-wrapper">
+          <img class="popup__manager-img" src="images/manager.webp" alt="manager">
+        </div>
+        <div class="popup__manager-info">
+          <h5 class="popup__manager-name">
+            Имя Фамилия
+          </h5>
+          <p class="popup__manager-text">
+            служба заботы о клиентах
+          </p>
+        </div>
+      </div>
+      <h2 class="popup__title">
+        Заполните<br>
+        форму ниже,
+      </h2>
+      <p class="popup__subtitle">
+        Наш специалист свяжется с вами<br>
+        в течение 5 минут или в удобное<br>
+        для вас время
+      </p>
+      <img class="popup__left-img" src="images/popup-phone.webp" alt="phone">
+    </div>
+    <form method="POST" action="#" enctype="multipart/form-data"
+      class="popup__form big-popup__form form form-submit _image-wrapper relative">
+      <div class="overlay"></div>
+      <input type="hidden" name="from" class="from" value="Запишитесь на демо-показ в своем городе">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <h2 class="popup__form-title">
+        Закажите <br>
+        обратный звонок
+      </h2>
+      <p class="popup__form-subtitle">
+        Наш специалист свяжется с вами<br>
+        в течение 5 минут или в удобное<br>
+        для вас время
+      </p>
+      <div class="popup__form-inner">
+        <div class="form__items">
+          <div class="form__item">
+            <input class="_input popup__form-inp" type="tel" name="phone" placeholder="Введите номер телефона" required>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Выберите способ связи:
+            </p>
+            <div class="form__labels">
+              <label class="form__label">
+                <input type="radio" name="call" value="Телефон">
+                <span class="form__label-inner phone">
+                  <span class="form__label-text">
+                    Телефон
+                  </span>
+                  
+                </span>
+              </label>
+              <label class="form__label">
+                <input type="radio" name="call" value="WhatsApp" checked>
+                <span class="form__label-inner whatsapp">
+                  <span class="form__label-text">
+                    WhatsApp
+                  </span>
+                  
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Выберите время звонка:
+            </p>
+            <div class="form__labels popup__labels-time time-check">
+              <label class="form__label popup__label-time">
+                <input type="radio" name="tab-time" value="Сейчас" checked>
+                <span class="form__label-inner popup__label-inner ">
+                  <span class="form__label-text">
+                    Сейчас
+                  </span>
+                </span>
+              </label>
+              <label class="form__label popup__label-time">
+                <input type="radio" name="tab-time" value="По времени">
+                <span class="form__label-inner popup__label-inner ">
+                  <span class="form__label-text">
+                    По времени
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <p class="form__text popup__form-text">
+              Когда вам будет удобно принять звонок?
+            </p>
+            <input class="_input popup__inp-time time-input" type="text" name="time"
+              placeholder="Например, завтра в 12:00" disabled>
+            <button type="submit" class="form__btn popup__btn _main-btn">
+              Заказать обратный звонок
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-block form__checkbox">
+          <input type="checkbox" name="access" required checked>
+          <span class="checkbox-block__check">
+            
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+              конфиденциальности</a>
+          </span>
+        </label>
+      </div>
+
+    </form>
+  </div>
+</div>
+<div class="popup" id="change-number" style="display: none;">
+  <form method="POST" action="#" enctype="multipart/form-data"
+    class="popup__form form form-submit _image-wrapper relative">
+    <div class="overlay"></div>
+    <input type="hidden" name="from" class="from" value="Исправленный номер">
+    <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+    <h2 class="popup__form-title popup__show-title">
+      Оставьте свой исправленный номер
+    </h2>
+    <div class="popup__form-inner">
+      <div class="form__bottom">
+        <input class="_input popup__form-inp" type="tel" name="phone" placeholder="Введите номер телефона" required>
+
+        <button type="submit" class="form__btn popup__btn _main-btn">
+          Отправить
+        </button>
+      </div>
+      <label class="checkbox-block form__checkbox">
+        <input type="checkbox" name="access" required checked>
+        <span class="checkbox-block__check">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.24334 2.50072L5.00034 6.74572C4.60934 7.13672 3.97634 7.13672 3.58634 6.74572L0.757344 3.91372C0.367344 3.52372 0.367344 2.89672 0.757344 2.50072C1.14834 2.10672 1.78134 2.10672 2.17234 2.50072L4.29334 4.62372L7.82834 1.08772C8.21934 0.694719 8.85234 0.694719 9.24334 1.08772C9.63334 1.48372 9.63334 2.10672 9.24334 2.50072Z"
+              fill="#D3C61B" />
+          </svg>
+
+        </span>
+        <span class="checkbox-block__text">
+          Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+            конфиденциальности</a>
+        </span>
+      </label>
+    </div>
+
+  </form>
+</div>
+<div class="popup quiz" id="quiz" style="display: none;">
+  <div class="quiz__inner">
+    <div class="quiz__left">
+      <div class="quiz__left-wrapper">
+        <img class="quiz__left-img _img" src="images/quiz-left.webp" alt="quiz-left">
+      </div>
+    </div>
+    <form class="quiz-block quiz__form form-submit" action="#" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="from" value="Получить экспертный подбор агродрона">
+      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+      <div class="progress-bar">
+        <div class="quiz-progress__line progress-line">
+          <div class="line" style="left: -80.5%;" data-left="80.5"></div>
+        </div>
+        <div class="progress-text">
+          <div class="progress-text__inner">
+            <span class="progress-text__first-word">Осталось</span> <span class="current-step">3</span>
+            <span class="rp-rule__span">вопроса</span> из 3
+          </div>
+        </div>
+      </div>
+      <div class="step step1 active">
+        <h2 class="quiz-step__title ">
+          01. Для каких целей вы<br>
+          хотите оклеить автомобиль?
+        </h2>
+        <div class="step__inner">
+          <div class="step__body">
+            <div class="quiz-list">
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-1" class="hidden" value="Новый авто, хочется сохранить в идеале">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Новый авто, хочется<br>
+                      сохранить в идеале
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-1" class="hidden"
+                    value="Машина в хорошем состоянии, хочу обновить облик/защитить покрытие">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Машина в хорошем<br>
+                      состоянии, хочу обновить<br>
+                      облик/защитить покрытие
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-1" class="hidden"
+                    value="Есть мелкие царапины, нужна защита и «освежение»">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Есть мелкие <br>
+                      царапины, нужна защита <br>
+                      и «освежение»
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-1" class="hidden" value="Затрудняюсь ответить">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Затрудняюсь ответить
+                    </h6>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-footer">
+          <div class="quiz-footer__btns">
+            <button type="button" class="quiz-btn next-step _main-btn">
+              На следующий шаг
+              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2058_8462)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
+                    fill="#ffffff" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2058_8462">
+                    <rect width="26" height="9" fill="#ffffff" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
+        </div>
+      </div>
+      <div class="step step2 ">
+        <h2 class="quiz-step__title ">
+          02. Какой вид оклейки<br>
+          вас интересует?
+        </h2>
+        <div class="step__inner">
+          <div class="step__body">
+            <div class="quiz-list">
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-2" class="hidden" value="Полная оклейка автомобиля">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Полная оклейка<br>
+                      автомобиля
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-2" class="hidden" value="Защита зон риска: капот, бампер, фары и пр.">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Защита зон риска:<br>
+                      капот, бампер, фары и пр.
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-2" class="hidden"
+                    value="Убрать хром, сделать матовый или агрессивный стиль">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Убрать хром, сделать
+                      матовый или агрессивный
+                      стиль
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-2" class="hidden" value="Затрудняюсь ответить">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Затрудняюсь ответить
+                    </h6>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-footer">
+          <div class="quiz-footer__btns">
+            <button type="button" class="quiz-btn next-step _main-btn">
+              На следующий шаг
+              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2058_8462)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
+                    fill="#ffffff" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2058_8462">
+                    <rect width="26" height="9" fill="#ffffff" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
+        </div>
+      </div>
+      <div class="step step3 ">
+        <h2 class="quiz-step__title ">
+          03. Когда вы хотели бы<br>
+          провести оклейку?
+        </h2>
+        <div class="step__inner">
+          <div class="step__body">
+            <div class="quiz-list">
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-3" class="hidden" value="В ближайшее время">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      В ближайшее время
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-3" class="hidden" value="В течение месяца">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      В течение месяца
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-3" class="hidden" value="Через месяц или более">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Через месяц или более
+                    </h6>
+                  </div>
+                </label>
+              </div>
+              <div class="quiz-list__item variant">
+                <label class="quiz-list__option">
+                  <input type="radio" name="quest-3" class="hidden" value="Затрудняюсь ответить">
+                  <span class="quiz-list__icon">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
+                        stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  <div class="quiz-list__option-info">
+                    <h6 class="quiz-list__option-title">
+                      Затрудняюсь ответить
+                    </h6>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quiz-footer">
+          <div class="quiz-footer__btns">
+            <button type="button" class="quiz-btn next-step _main-btn">
+              На следующий шаг
+              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2058_8462)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
+                    fill="#ffffff" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2058_8462">
+                    <rect width="26" height="9" fill="#ffffff" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
+        </div>
+      </div>
+      <div class="step step4 quiz-block__last-step last-step ">
+        <h2 class="last-step__title">
+          Спасибо за ответы! Специалист уже приступил<br>
+          к формированию стоимости
+        </h2>
+        <p class="last-step__subtitle">
+          Оставьте контакты и получите:
+        </p>
+        <div class="last-step__items">
+          <div class="last-step__item">
+            
+            <p class="last-step__item-text">
+              стоимость оклейки по выбранным параметрам
+            </p>
+          </div>
+          <div class="last-step__item">
+            
+            <p class="last-step__item-text">
+              <span>подарок:</span> защита фар при з аказе любого вида оклейки
+            </p>
+          </div>
+        </div>
+        <div class="last-step__form-inner">
+          <p class="form__text">
+            Каким способом вам удобнее получить<br> информацию от специалиста?
+          </p>
+          <div class="form__labels">
+            <label class="form__label last-step__label">
+              <input type="radio" name="call" value="Телефон">
+              <span class="form__label-inner last-step__label-inner phone">
+                <span class="form__label-text last-step__label-text">
+                  Телефон
+                </span>
+                
+              </span>
+            </label>
+            <label class="form__label last-step__label">
+              <input type="radio" name="call" value="WhatsApp" checked>
+              <span class="form__label-inner last-step__label-inner whatsapp">
+                <span class="form__label-text last-step__label-text">
+                  WhatsApp
+                </span>
+                
+              </span>
+            </label>
+          </div>
+          <div class="form__bottom">
+            <div class="form__inputs">
+              <input class="_input" type="tel" name="phone" placeholder="Введите номер телефона" required>
+              <button type="submit" class="form__btn _main-btn">
+                Получить расчет<br>
+                стоимости + подарок
+              </button>
+            </div>
+          </div>
+          <label class="checkbox-block form__checkbox">
+            <input type="checkbox" name="access" required checked>
+            <span class="checkbox-block__check">
+              
+            </span>
+            <span class="checkbox-block__text">
+              Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                конфиденциальности</a>
+            </span>
+          </label>
+        </div>
+        <img class="last-step__img" src="images/quiz-phone.webp" alt="quiz-phone">
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
+<div class="popup" id="consultation-change" style="display: none;">
+  <form method="POST" action="#" enctype="multipart/form-data"
+    class="popup__form form form-submit _image-wrapper relative">
+    <div class="overlay"></div>
+    <input type="hidden" name="from" class="from" value="Получить консультацию">
+    <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+    <h2 class="popup__form-title popup__show-title">
+      Получите консультацию
+      по заказу полнокомплектного дроновоза
+    </h2>
+    <div class="popup__form-inner">
+      <div class="form__bottom">
+        <p class="form__text popup__form-text">
+          Выберите способ связи:
+        </p>
+        <div class="form__labels">
+          <label class="form__label">
+            <input type="radio" name="call" value="Телефон">
+            <span class="form__label-inner phone">
+              <span class="form__label-text">
+                Телефон
+              </span>
+              
+            </span>
+          </label>
+          <label class="form__label">
+            <input type="radio" name="call" value="WhatsApp" checked>
+            <span class="form__label-inner whatsapp">
+              <span class="form__label-text">
+                WhatsApp
+              </span>
+              
+            </span>
+          </label>
+        </div>
+        <input class="_input popup__form-inp" type="tel" name="tel" placeholder="Введите номер телефона" required>
+
+        <button type="submit" class="form__btn popup__btn _main-btn">
+          Отправить
+        </button>
+      </div>
+      <label class="checkbox-block form__checkbox">
+        <input type="checkbox" name="access" required checked>
+        <span class="checkbox-block__check">
+          
+        </span>
+        <span class="checkbox-block__text">
+          Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+            конфиденциальности</a>
+        </span>
+      </label>
+    </div>
+
+  </form>
+</div>
+
+
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
