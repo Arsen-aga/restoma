@@ -1,6 +1,6 @@
 .front-block-home {
   background-image: url(../images/front-block-home.webp);
-  padding: 223px 0 120px;
+  padding: 223px 0 133px;
   position: relative;
   border-radius: 0 0 150px 150px;
 
@@ -17,56 +17,36 @@
   }
 
   &__inner {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    color: var(--light-color);
-    position: relative;
-
-    @include lg {
-      gap: 20px;
-    }
-
-    @include md {
-      flex-direction: column;
-    }
+    max-width: 850px;
+    margin: 0 auto;
   }
 
   &__title {
-    font-weight: 400;
-    font-size: 76px;
-    line-height: calc(84/74*100%);
-    color: var(--light-color);
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: transparent;
+    background-image: url(../images/text-bg.webp);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
     margin-bottom: 20px;
+  }
 
-    span {
-      color: var(--primary);
-    }
-
-    @include xl {
-      font-size: 54px;
-    }
-
-    @include lg {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    @include sm {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(36/28*100%);
+    margin-bottom: 45px;
   }
 
   &__bottom {
-    position: relative;
-    max-width: 730px;
-    width: 100%;
-
-    @include lg {
-      position: static;
-    }
-
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
 
   &__items {
@@ -95,8 +75,8 @@
     }
 
     @include xs {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
     }
   }
 
@@ -112,9 +92,9 @@
     }
 
     @include xs {
-        flex-direction: row;
-        max-width: none;
-        gap: 15px;
+      flex-direction: row;
+      max-width: none;
+      gap: 15px;
     }
 
   }
@@ -130,7 +110,9 @@
     }
 
     @include xs {
-        br{display: none;}
+      br {
+        display: none;
+      }
     }
   }
 
@@ -178,7 +160,7 @@
     }
 
     @include sm {
-        display: none;
+      display: none;
     }
   }
 
@@ -214,8 +196,8 @@
     }
 
     @include md {
-        font-size: 12px;
-        margin-top: 30px;
+      font-size: 12px;
+      margin-top: 30px;
     }
   }
 
@@ -241,7 +223,7 @@
     }
 
     @include xs {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
