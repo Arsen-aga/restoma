@@ -12,13 +12,6 @@ body {
   line-height: var(--defaul-line-height);
 }
 
-.body_wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100% !important;
-  overflow: hidden;
-}
-
 a {
   color: var(--link-color);
 }
@@ -69,27 +62,16 @@ a {
 
 
 .logo {
-  max-width: 201px;
+  max-width: 243px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
-
-  @include xl {
-    max-width: 160px;
-  }
-
-  @include xs {
-    max-width: 150px;
-  }
+  gap: 15px;
 
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16*100%);
-    text-align: center;
-    color: var(--light-color);
 
     @include xs {
       font-size: 12px;
@@ -98,58 +80,27 @@ a {
 }
 
 
-.info-block {
+.geo {
   display: flex;
-  align-items: start;
-  gap: 25px;
-  max-width: 333px;
+  align-items: center;
+  gap: 10px;
+  max-width: 143px;
 
   @include xl {
     gap: 10px;
   }
 
-  &__map {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    @include xl {
-      gap: 10px;
-    }
+  svg {
+    height: 24px;
+    width: 20px;
   }
 
-  &__map-img {
-    height: 48px;
-    width: 48px;
-  }
-
-  &__map-text {
-    font-weight: 400;
+  &__text {
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16*100%);
-    color: var(--light-color);
-
-    @include xl {
-      font-size: 14px;
-    }
-  }
-
-  &__parnas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    svg {
-      height: 18px;
-      width: 23px;
-    }
-  }
-
-  &__parnas-text {
-    color: var(--light-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(24/16*100%);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 
     @include xl {
       font-size: 14px;
@@ -159,9 +110,22 @@ a {
 
 .social-block {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 
   @include xl {
+    gap: 10px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
     gap: 10px;
   }
 
@@ -169,10 +133,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 46px;
-    width: 46px;
-    min-height: 46px;
-    min-width: 46px;
+    height: 52px;
+    width: 52px;
+    min-height: 52px;
+    min-width: 52px;
     padding: 10px;
     border-radius: 50%;
     transition: all .3s ease-in-out;
@@ -190,19 +154,29 @@ a {
     }
 
   }
+
+  &__telegram {
+    background-color: var(--telegram-color);
+
+    &:hover {
+      background-color: var(--telegram-hover);
+    }
+
+  }
 }
 
 .phone-block {
-  margin-top: 6px;
-  max-width: 220px;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 
   &__top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 500;
     font-size: 26px;
     line-height: calc(34/26*100%);
-    color: var(--light-color);
 
     @include xl {
       font-size: 20px;
@@ -216,13 +190,13 @@ a {
   &__link {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(24/16*100%);
+    line-height: calc(22/16*100%);
     text-decoration: underline;
     text-underline-offset: 3px;
     color: var(--primary);
     transition: all .3s ease-in-out;
-    
-    &:hover{
+
+    &:hover {
       color: var(--primary-hover);
     }
 
@@ -683,9 +657,10 @@ a {
     gap: 20px;
 
     @include sm {
-        gap: 10px;
+      gap: 10px;
     }
   }
+
   &__inputs {
     display: grid;
     gap: 10px;

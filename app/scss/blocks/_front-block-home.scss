@@ -1,8 +1,8 @@
-.front-block {
-  background-image: url(../images/front-block.webp);
-  padding: 150px 0 120px;
+.front-block-home {
+  background-image: url(../images/front-block-home.webp);
+  padding: 223px 0 120px;
   position: relative;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 150px 150px;
 
   @include xl {
     padding: 150px 0 100px;
@@ -151,7 +151,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background-image: url(../images/icons/front-block-info.svg);
+    background-image: url(../images/icons/front-block-home-info.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

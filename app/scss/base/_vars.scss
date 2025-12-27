@@ -11,8 +11,11 @@
   --font-titles: var(--font-default);
 
   // размер шрифта
-  --defaul-font-size: 16px;
-  --defaul-line-height: calc(24/16*100%);
+  --defaul-font-size: 18px;
+  --defaul-line-height: calc(26/18*100%);
+  @media (max-width: 468px) {
+    --defaul-font-size: 16px;
+  }
 
   // брекпоинты
   --xl: 1230px;
@@ -22,26 +25,25 @@
   --xs: 468px;
 
   // глобаьлные цвета
-  --page-bg: #121212;
-  --default-color: #0A0F13;
-  --link-color: #464451;
+  --page-bg: #FFFFFF;
+  --default-color: #252A36;
+  --link-color: #252A36;
 
 
   // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
 
-  --primary: #F52D3A;
-  --primary-hover: #FF404C;
+  --primary: #4487FF;
+  --accent: #7BC486;
   --light-color: #FFFFFF;
-  --accent: #027FFF;
-  --accent-hover: #2E95FF;
   --whatsapp-color: #25D366;
   --whatsapp-hover: #2DE873;
-  
-  
-  --telegram-color: #0c1012;
+  --telegram-color: #35A9E5;
   --telegram-hover: #54C0F8;
-  --dark: #000000;
-  --gray: #C0C0C0;
+
+  
+  
+  --primary-hover: #FF404C;
+  --accent-hover: #2E95FF;
   
 
   // Отступы для блоков

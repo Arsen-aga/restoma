@@ -1,8 +1,14 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      @@include('../components/logo.html', {"color": "black"})
-      @@include('../components/info-block.html', {"class": "footer__info-block"})
+      <a class="logo footer__logo" href="/">
+        @@include('../../images/icons/logo.svg')
+        <p class="logo__text">
+          Московский центр<br>
+          имплантации и протезирования
+        </p>
+      </a>
+      @@include('../components/geo.html', {"class": "footer__geo"})
       <div class="footer__right social-block">
         <div class="footer__social">
           @@include('../components/social-block.html', {"class": "footer__social-block", "phone-class": "footer__phone"})

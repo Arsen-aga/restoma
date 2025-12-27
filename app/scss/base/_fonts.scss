@@ -14,6 +14,13 @@
 }
 @font-face {
   font-family: "Onest";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Onest-SemiBold.woff2") format("woff2"), url("../fonts/Onest-SemiBold.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest";
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");

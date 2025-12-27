@@ -1,67 +1,49 @@
 .header {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
 
-  &__inner {
-    display: flex;
-    align-items: start;
+  &__top {
+    padding: 20px 0;
   }
 
-  &__info-block {
-    margin-left: 60px;
-
-    @include xl {
-        margin-left: 15px;
-    }
-
-    @include lg {
-        display: none;
-    }
-  }
-
-  &__yandex {
+  &__top-inner {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin: 0 38px;
-
-    @include xl {
-        margin: 0 10px;
-    }
-
-    @include lg {
-        margin-left: auto;
-    }
-
-    @include md {
-        display: none;
-    }
+    justify-content: space-between;
+    gap: 15px;
   }
 
-  &__yandex-img{
-    @include xl {
-        max-width: 95px;
-    }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
 
-  &__yandex,
-  &__info-block,
-  &__logo {
-    margin-top: 10px;
+  &__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--light-color);
+    box-shadow: 0px 765px 250px rgba(217, 217, 217, 0.01), 0px 431px 250px rgba(217, 217, 217, 0.05), 0px 191px 191px rgba(217, 217, 217, 0.09), 0px 48px 105px rgba(217, 217, 217, 0.1);
+    border-radius: 5px;
+    padding: 8px 15px;
   }
 
-  &__social-block{
-    @include md {
-        margin-left: auto;
-    }
+  &__bottom-btn {
+    min-width: 35px;
+    min-height: 35px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .social-block__whatsapp{
-    @include xs {
-        display: none;
-    }
-  }
+
 }
