@@ -1,0 +1,21 @@
+<section class="diagnostics">
+    <div class="container">
+        <div class="diagnostics__inner">
+            <span class="diagnostics__subtitle">Бесплатная полная диагностика до 25 марта</span>
+            <h2 class="diagnostics__title _title-2">3D-снимок + ОПТГ + анализ искусственным интеллектом + 3 плана лечения <span>за 0 руб.</span></h2>
+            <form action="#" method="POST" enctype="multipart/form-data" class="diagnostics__form form-submit">
+                <input type="hidden" name="from" class="from" value="Бесплатная полная диагностика до 25 марта">
+                <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+                <h3 class="diagnostics__form-title">Введите ваш номер телефона в форме ниже</h3>
+                <p class="diagnostics__form-subtitle">и мы подберем удобное время проведения диагностики</p>
+                <input type="tel" class="diagnostics__form-telephone _input-2" placeholder="Введите номер телефона">
+                <button type="submit" class="diagnostics__form-button _link-btn">Пройти полную диагностику бесплатно</button>
+                <label class="diagnostics__form-conditions checkbox-block">
+                    <input type="checkbox">
+                    <span class="checkbox-block__check">@@include('../../images/icons/checkbox.svg')</span>
+                    <p class="checkbox-block__text">Я принимаю условия <a href="#politics" data-fancybox>политики конфиденциальности</a></p>
+                </label>
+            </form>
+        </div>
+    </div>
+</section>

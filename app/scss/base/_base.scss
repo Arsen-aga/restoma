@@ -518,6 +518,23 @@ a {
   }
 }
 
+._input-2 {
+  padding-left: 35px;
+  width: 100%;
+  border: 1px solid var(--gray-color);
+  border-radius: 14px;
+  height: 96px;
+
+  @include lg {
+    height: 75px;
+  }
+
+  @include sm {
+    height: 65px;
+  }
+}
+
+
 
 
 
@@ -575,7 +592,7 @@ a {
     a {
       text-decoration: underline;
       text-underline-offset: 3px;
-      color: var(--accent);
+      color: var(--primary);
     }
   }
 

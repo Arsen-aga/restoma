@@ -37,6 +37,26 @@
 
 }
 
+._title-2 {
+  font-family: var(--font-default);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: calc(52/44*100%);
+  color: var(--default-color);
+
+  span {
+    color: var(--blue-color);
+  }
+
+  @include lg {
+    font-size: 35px;
+  }
+
+  @include sm {
+    font-size: 22px;
+  }
+}
+
 ._subtitle {
   font-family: var(--font-default);
   text-align: center;
