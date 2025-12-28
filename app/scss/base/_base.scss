@@ -121,6 +121,10 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16*100%);
+
+    @include xl {
+        font-size: 14px;
+    }
   }
 
   &__links {
@@ -140,6 +144,13 @@ a {
     padding: 10px;
     border-radius: 50%;
     transition: all .3s ease-in-out;
+    
+    @include xl {
+      height: 42px;
+      width: 42px;
+      min-height: 42px;
+      min-width: 42px;
+    }
 
     &:hover {
       scale: 1.1;
@@ -229,12 +240,12 @@ a {
 
   @include xl {
     font-size: 16px;
-    height: 90px;
+    height: 80px;
   }
 
 
   @include lg {
-    height: 80px;
+    height: 75px;
     font-size: 16px;
   }
 
