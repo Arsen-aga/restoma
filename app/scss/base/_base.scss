@@ -207,6 +207,75 @@ a {
 
 }
 
+._link-btn,
+._main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary);
+  border-radius: 14px;
+  color: var(--light-color);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  font-family: var(--font-default);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(26/20*100%);
+  box-shadow: 0px 15px 30px rgba(37, 111, 244, 0.15), inset 0px 10px 15px rgba(255, 255, 255, 0.15);
+
+  @include xl {
+    font-size: 16px;
+    height: 90px;
+  }
+
+
+  @include lg {
+    height: 80px;
+    font-size: 16px;
+  }
+
+  @include sm {
+    height: 65px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 0 transparent;
+    background: var(--primary);
+  }
+}
+
+._link-btn{
+  position: relative;
+
+  &::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 15px;
+    right: 17px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icons/arrow-link.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+
+
+
+
 .play {
   position: absolute;
   top: 0;
@@ -244,52 +313,6 @@ a {
     align-items: center;
     transition: all .3s ease-in-out;
     box-shadow: 0px 15px 30px rgba(190, 238, 98, 0.15), inset 0px 10px 15px rgba(255, 255, 255, 0.15);
-  }
-}
-
-._main-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  width: 100%;
-  height: 100px;
-  background: var(--primary);
-  box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
-  border-radius: 100px;
-  font-family: var(--font-default);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(26/18*100%);
-  text-align: center;
-  color: var(--light-color);
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-
-  @include xl {
-    font-size: 16px;
-    height: 90px;
-  }
-
-
-  @include lg {
-    height: 80px;
-    font-size: 16px;
-  }
-
-  @include sm {
-    height: 65px;
-    font-size: 14px;
-  }
-
-  &:hover {
-    background-color: var(--primary-hover);
-    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
-  }
-
-  &:active {
-    box-shadow: 0 0 0 0 transparent;
-    background: var(--primary);
   }
 }
 

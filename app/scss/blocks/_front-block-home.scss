@@ -3,6 +3,7 @@
   padding: 223px 0 133px;
   position: relative;
   border-radius: 0 0 150px 150px;
+  overflow: hidden;
 
   @include xl {
     padding: 150px 0 100px;
@@ -19,6 +20,7 @@
   &__inner {
     max-width: 850px;
     margin: 0 auto;
+    position: relative;
   }
 
   &__title {
@@ -49,229 +51,58 @@
     gap: 40px;
   }
 
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    max-width: 483px;
-    margin-bottom: 50px;
-
-    @include xl {
-      margin-bottom: 40px;
-      gap: 10px;
-    }
-
-    @include lg {
-      gap: 8px;
-      margin-bottom: 30px;
-    }
-
-    @include md {
-      margin-bottom: 20px;
-    }
-
-    @include sm {
-      margin-bottom: 15px;
-    }
-
-    @include xs {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 15px;
-    }
+  &__btn {
+    max-width: 332px;
   }
 
-  &__item {
+  &__link {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 15px;
-
-    @include lg {
-      max-width: 170px;
-      gap: 8px;
-    }
-
-    @include xs {
-      flex-direction: row;
-      max-width: none;
-      gap: 15px;
-    }
-
+    gap: 20px;
   }
 
-  &__item-title {
+  &__link-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(26/18*100%);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__slogan {
+    position: absolute;
+    right: -200px;
+    top: 78px;
+  }
+
+  &__slogan-text {
+    padding: 5px 15px;
+    background-color: var(--light-color);
+    box-shadow: -77px 147px 67px rgba(0, 0, 0, 0.01), -44px 83px 56px rgba(0, 0, 0, 0.05), -19px 37px 42px rgba(0, 0, 0, 0.09), -5px 9px 23px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
     font-weight: 400;
     font-size: 20px;
-    line-height: calc(28/20*100%);
-    text-align: center;
+    line-height: calc(36/20*100%);
 
-    @include lg {
-      font-size: 16px;
-    }
-
-    @include xs {
-      br {
-        display: none;
-      }
-    }
-  }
-
-  &__item-wrapper {
-    max-width: 130px;
-    height: 80px;
-    width: 100%;
-    border-radius: 100px;
-    overflow: hidden;
-
-    @include lg {
-      max-width: 110px;
-      height: 60px;
-    }
-  }
-
-  &__info {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-image: url(../images/icons/front-block-home-info.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    max-width: 160px;
-    width: 100%;
-    height: 210px;
-
-    @include xl {
-      right: -65px;
+    &:nth-child(1){
+      position: relative;
       z-index: 1;
-      max-width: 130px;
-      height: 200px;
+      rotate: -7.3deg;
     }
-
-    @include lg {
-      right: 125px;
+    &:nth-child(2){
+      rotate: 2.46deg;
+      transform: translateY(10px);
     }
-
-    @include md {
-      max-width: 110px;
-      height: 150px;
-      right: 0;
-      top: -20px;
-    }
-
-    @include sm {
-      display: none;
+    &:nth-child(3){
+      transform: translateY(26px);
+      rotate: -5.46deg;
     }
   }
 
-  &__info-icon {
-    position: absolute;
-    top: -19px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: var(--accent);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include xl {
-      top: -9px;
-    }
+  &__arrow-btn{
+    
   }
 
-  &__info-text {
-    margin-top: 34px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24/16*100%);
-    text-align: center;
-    color: var(--default-color);
-
-    @include xl {
-      font-size: 14px;
-      margin-top: 45px;
-    }
-
-    @include md {
-      font-size: 12px;
-      margin-top: 30px;
-    }
-  }
-
-  &__info-img {
-    position: absolute;
-    max-width: 98%;
-    bottom: 20px;
-    right: 0;
-
-    @include xl {
-      max-width: 90%;
-    }
-  }
-
-  &__btns {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: 730px;
-
-    @include md {
-      gap: 10px;
-    }
-
-    @include xs {
-      flex-direction: column;
-    }
-  }
-
-  &__btn {
-    max-width: 360px;
-
-    @include lg {
-      font-size: 12px;
-    }
-  }
-
-  &__right {
-    max-width: 400px;
-    width: 100%;
-
-    @include xl {
-      max-width: 320px;
-    }
-
-    @include lg {
-      max-width: 260px;
-    }
-
-    @include md {
-      max-width: none;
-    }
-  }
-
-  &__right-link {
-    position: relative;
-    width: 100%;
-    padding-bottom: calc(712/400*100%);
-    border-radius: 24px;
-    overflow: hidden;
-    display: block;
-
-    @include md {
-      padding-bottom: 56%;
-    }
-  }
-
-
-  &__bottom-img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 1700px;
-    width: 100%;
-  }
 }
