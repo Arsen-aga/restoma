@@ -1,4 +1,17 @@
 .service {
+    padding-top: 100px;
+
+    @include lg {
+        padding-top: 70px;
+    }
+
+    @include md {
+        padding-top: 50px;
+    }
+
+    @include sm {
+        padding-top: 30px;
+    }
 
     &-surgery {
         min-height: 769px;
