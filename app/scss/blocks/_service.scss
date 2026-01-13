@@ -1,6 +1,24 @@
 .service {
     padding-top: 100px;
 
+    &-periodontics {
+        min-height: 503px;
+
+        @include lg {
+            min-height: auto;
+        }
+    }
+
+    &__bg-img {
+
+        @include md {
+            filter: blur(7px) !important;
+        }
+    }
+
+
+
+
     @include lg {
         padding-top: 70px;
     }
@@ -11,10 +29,6 @@
 
     @include sm {
         padding-top: 30px;
-    }
-
-    &-surgery {
-        min-height: 769px;
     }
 
     &__title {
@@ -36,17 +50,26 @@
     }
 
     &__inner {
-        max-width: 750px;
+        max-width: 800px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+        gap: 57px;
         position: relative;
         z-index: 3;
 
-        @include xs {
-            flex-direction: column;
+        @include lg {
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
         }
+
+        @include sm {
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+
     }
 
     &__list {
@@ -57,6 +80,7 @@
         @include md {
             gap: 10px;
         }
+        
     }
 
     &__link {
@@ -66,10 +90,22 @@
         text-decoration: underline 2px;
         text-underline-offset: 5px;
 
+        @include lg {
+            font-size: 20px;
+        }
+
         @include md {
-            font-size: 18px;
+            font-size: 16px;
             text-decoration: underline 1.5px;
         }
+
+        @include sm {
+            font-size: 18px;
+        }
+    }
+
+    &__link-line {
+        line-height: calc(36/24 * 100%);
     }
 
     &__min-list {
@@ -77,11 +113,23 @@
         flex-direction: column;
         gap: 10px;
         padding: 5px 0;
+
+        @include md {
+            gap: 5px;
+        }
     }
 
     &__min-item {
         padding-left: 16px;
         position: relative;
+
+        @include md {
+            font-size: 14px;
+        }
+
+        @include sm {
+            font-size: 16px;
+        }
 
         &::before {
             content: '';
