@@ -1,11 +1,12 @@
 .front-block-home {
   background-image: url(../images/front-block-home.webp);
-  padding: 223px 0 120px;
+  padding: 223px 0 133px;
   position: relative;
   border-radius: 0 0 150px 150px;
+  overflow: hidden;
 
   @include xl {
-    padding: 150px 0 100px;
+    padding: 220px 0 100px;
   }
 
   @include lg {
@@ -17,279 +18,163 @@
   }
 
   &__inner {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    color: var(--light-color);
+    max-width: 850px;
+    margin: 0 auto;
     position: relative;
-
-    @include lg {
-      gap: 20px;
-    }
-
-    @include md {
-      flex-direction: column;
-    }
   }
 
   &__title {
-    font-weight: 400;
-    font-size: 76px;
-    line-height: calc(84/74*100%);
-    color: var(--light-color);
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: transparent;
+    background-image: url(../images/text-bg.webp);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
     margin-bottom: 20px;
 
-    span {
-      color: var(--primary);
+    @include xl {
+        font-size: 80px;
+        text-align: left;
+        margin-bottom: 15px;
     }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(36/28*100%);
+    margin-bottom: 45px;
 
     @include xl {
-      font-size: 54px;
-    }
-
-    @include lg {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    @include sm {
-      font-size: 34px;
-      margin-bottom: 10px;
+        font-size: 26px;
+        margin-bottom: 30px;
     }
   }
 
   &__bottom {
-    position: relative;
-    max-width: 730px;
-    width: 100%;
-
-    @include lg {
-      position: static;
-    }
-
-  }
-
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
     gap: 40px;
-    max-width: 483px;
-    margin-bottom: 50px;
 
     @include xl {
-      margin-bottom: 40px;
-      gap: 10px;
-    }
-
-    @include lg {
-      gap: 8px;
-      margin-bottom: 30px;
-    }
-
-    @include md {
-      margin-bottom: 20px;
-    }
-
-    @include sm {
-      margin-bottom: 15px;
-    }
-
-    @include xs {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-    }
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-
-    @include lg {
-      max-width: 170px;
-      gap: 8px;
-    }
-
-    @include xs {
-        flex-direction: row;
-        max-width: none;
-        gap: 15px;
-    }
-
-  }
-
-  &__item-title {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(28/20*100%);
-    text-align: center;
-
-    @include lg {
-      font-size: 16px;
-    }
-
-    @include xs {
-        br{display: none;}
-    }
-  }
-
-  &__item-wrapper {
-    max-width: 130px;
-    height: 80px;
-    width: 100%;
-    border-radius: 100px;
-    overflow: hidden;
-
-    @include lg {
-      max-width: 110px;
-      height: 60px;
-    }
-  }
-
-  &__info {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-image: url(../images/icons/front-block-home-info.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    max-width: 160px;
-    width: 100%;
-    height: 210px;
-
-    @include xl {
-      right: -65px;
-      z-index: 1;
-      max-width: 130px;
-      height: 200px;
-    }
-
-    @include lg {
-      right: 125px;
-    }
-
-    @include md {
-      max-width: 110px;
-      height: 150px;
-      right: 0;
-      top: -20px;
-    }
-
-    @include sm {
-        display: none;
-    }
-  }
-
-  &__info-icon {
-    position: absolute;
-    top: -19px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: var(--accent);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include xl {
-      top: -9px;
-    }
-  }
-
-  &__info-text {
-    margin-top: 34px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24/16*100%);
-    text-align: center;
-    color: var(--default-color);
-
-    @include xl {
-      font-size: 14px;
-      margin-top: 45px;
-    }
-
-    @include md {
-        font-size: 12px;
-        margin-top: 30px;
-    }
-  }
-
-  &__info-img {
-    position: absolute;
-    max-width: 98%;
-    bottom: 20px;
-    right: 0;
-
-    @include xl {
-      max-width: 90%;
-    }
-  }
-
-  &__btns {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: 730px;
-
-    @include md {
-      gap: 10px;
-    }
-
-    @include xs {
-        flex-direction: column;
+        gap: 30px;
     }
   }
 
   &__btn {
-    max-width: 360px;
+    max-width: 332px;
+  }
 
-    @include lg {
-      font-size: 12px;
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:hover{
+      color: var(--primary);
+
+      .front-block-home__link-icon{
+        scale: 1.1;
+      }
     }
   }
 
-  &__right {
-    max-width: 400px;
-    width: 100%;
+  &__link-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(26/18*100%);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: all .3s ease-in-out;
+
+  }
+
+  &__slogan {
+    position: absolute;
+    right: -200px;
+    top: 78px;
+
+    li::before{
+      display: none;
+    }
 
     @include xl {
-      max-width: 320px;
-    }
-
-    @include lg {
-      max-width: 260px;
-    }
-
-    @include md {
-      max-width: none;
+        top: 10px;
+        right: -160px;
     }
   }
 
-  &__right-link {
-    position: relative;
-    width: 100%;
-    padding-bottom: calc(712/400*100%);
-    border-radius: 24px;
-    overflow: hidden;
-    display: block;
+  &__slogan-text {
+    padding: 5px 15px;
+    background-color: var(--light-color);
+    box-shadow: -77px 147px 67px rgba(0, 0, 0, 0.01), -44px 83px 56px rgba(0, 0, 0, 0.05), -19px 37px 42px rgba(0, 0, 0, 0.09), -5px 9px 23px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(36/20*100%);
 
-    @include md {
-      padding-bottom: 56%;
+    @include xl {
+        font-size: 18px;
+    }
+
+    &:nth-child(1) {
+      position: relative;
+      z-index: 1;
+      rotate: -7.3deg;
+    }
+
+    &:nth-child(2) {
+      rotate: 2.46deg;
+      transform: translateY(10px);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(26px);
+      rotate: -5.46deg;
+      
+      @include xl {
+        transform: translateY(5px);
+      }
     }
   }
 
+  &__arrow-btn {
+    margin: 636px auto 0;
+    width: 73px;
+    height: 73px;
+    background-color: var(--light-color);
+    backdrop-filter: blur(42.15px);
+    border-radius: 50%;
+    outline: 1px solid rgba(0, 0, 0, 0.02);
+    outline-offset: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
 
-  &__bottom-img {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 1700px;
-    width: 100%;
+    @include xl {
+        margin-top: 300px;
+    }
+
+    &:hover{
+      scale: 1.1;
+      background-color: var(--primary);
+    }
+    svg{
+      height: 12px;
+      width: 21px;
+
+      path{
+        fill: #DDDDDD;
+      }
+    }
   }
+
 }
