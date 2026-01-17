@@ -1,0 +1,340 @@
+.advantage {
+    &__title {
+        text-align: center;
+    }
+
+    &__inner {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        @include md {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--light-color);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: flex-start;
+            gap: 30px;
+
+            &::-webkit-scrollbar {
+            background-color: black; 
+            border-radius: 5px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background-color: black; 
+                border-radius: 5px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                border: 2px solid var(--light-color);
+                box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+                
+                &:hover {
+                    background-color: var(--blue-color);
+                }
+            }
+        }
+    }
+
+    &__card {
+        border-radius: 12px;
+        border: 1px solid var(--black-transparent-color);
+        padding: 15px 33px 22px 35px;
+        position: relative;
+
+        @include xl {
+            padding: 10px;
+        }
+
+        @include md {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+            padding: 15px 33px 22px 35px;
+        }
+
+        @include sm {
+            padding: 15px 20px;
+        }
+
+        &:has(.advantage__card-list) {
+            padding: 15px 20px 20px 20px;
+
+            @include xl {
+                padding: 10px;
+            }
+
+            @include md {
+                padding: 15px 20px 20px 20px;
+            }
+        }
+
+    }
+
+    &__card-brand {
+        width: 128px;
+        height: 115px;
+        position: absolute;
+        top: 104px;
+        right: 55px;
+    }
+
+    &__card-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height:calc(32/24 * 100%);
+        padding-top: 15px;
+        margin-left: 10px;
+
+        @include lg {
+            font-size: 20px;
+        }
+
+        @include md {
+            font-size: 24px;
+        }
+    }
+
+    &__card-list {
+        padding-top: 15px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        line-height: calc(26/18 * 100%);
+        
+        @include lg {
+            padding-top: 5px;
+            gap: 0px;
+        }
+    }
+
+    &__card-item {
+        padding-left: 16px;
+        position: relative;
+
+        @include lg {
+            font-size: 16px;
+        }
+
+        @include md {
+            font-size: 18px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            left: 0;
+            background-color: var(--accent);
+            top: 11px;
+
+            @include xs {
+                top: 8px;
+            }
+        }
+    }
+
+    &__card-img {
+        border-radius: 12px;
+    }
+
+    &__assessments {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 13px;
+
+        @include lg {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @include md {
+            flex-direction: row;
+        }
+
+        @include sm {
+            gap: 5px;
+        }
+    }
+
+    &__assessments-left {
+        max-width: 209px;
+        width: 100%;
+        height: 132px;
+        border-radius: 12px;
+        background-color: var(--gray-light-color);
+        padding: 18px 21px;
+
+        @include xl {
+            height: 110px;
+            padding: 10px;
+        }
+
+        @include md {
+            height: 132px;
+            padding: 18px 21px;
+        }
+
+        @include xs {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__assessments-text {
+
+        @include xl {
+            font-size: 16px;
+        }
+    }
+
+    &__assessments-img {
+        max-width: 166px;
+        width: 100%;
+        height: 28px;
+        margin-top: 15px;
+
+        @include xl {
+            margin-top: 5px;
+        }
+    }
+
+    &__assessments-right {
+        max-width: 113px;
+        width: 100%;
+        height: 130px;
+
+        @include xl {
+            height: 100px;
+        }
+
+        @include md {
+            height: 130px;
+        }
+
+        
+    }
+
+    &__card-next {
+        border-radius: 12px;
+        border: 1px solid var(--black-transparent-color);
+        padding: 24px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        align-items: flex-end;
+        margin-top: 20px;
+
+        @include lg {
+            padding: 10px;
+        }
+
+        @include md {
+            padding: 24px 20px;
+        }
+
+        @include xs {
+            padding: 10px;
+        }
+    }
+
+    &__card-next-img {
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        width: 110px;
+        height: 110px;
+
+        @include xl {
+            width: 80px;
+            height: 80px;
+            bottom: 0;
+        }
+
+        @include lg {
+            display: none;
+        }
+
+        @include md {
+            display: block;
+            width: 110px;
+            height: 110px;
+            bottom: -12px;
+        }
+
+        @include xs {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__card-next-text {
+        max-width: 192px;
+        width: 100%;
+    }
+
+    &__card-next-big {
+        font-weight: 700;
+    }
+
+    &__one-img {
+        margin-top: 25px;
+        height: 295px;
+
+
+        @include lg {
+            height: 266px;
+        }
+
+        @include md {
+            height: 295px;
+        }
+    }
+
+    &__two-img {
+        height: 231px;
+
+        @include lg {
+            height: 180px;
+        }
+
+        @include md {
+            height: 231px;
+        }
+    }
+
+    &__three-img {
+        margin-top: 26px;
+        height: 252px;
+
+        @include xl {
+            height: 303px;
+        }
+
+        @include lg {
+            height: 216px;
+            margin-top: 15px;
+        }
+
+        @include md {
+            height: 252px;
+        }
+    }
+
+    &__one-title {
+        margin-top: 10px;
+    }
+}
