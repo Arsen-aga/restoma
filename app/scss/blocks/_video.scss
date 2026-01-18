@@ -1,0 +1,36 @@
+.video {
+
+
+    &__title {
+        text-align: center;
+    }
+
+    &__inner {
+        padding-top: 50px;
+
+        @include md {
+            padding-top: 25px;
+        }
+    }
+
+    &__img {
+        max-width: inherit;
+        width: 100%;
+        aspect-ratio: 1.777;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    &__play {
+
+        @include xs {
+            .play__inner {
+                width: 60px;
+                height: 60px;
+                padding: 10px;
+            }
+        }
+    }
+
+
+}
