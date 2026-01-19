@@ -1,3 +1,28 @@
+const swiper = new Swiper(".auto-swiper__inner", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 15,
+  initialSlide: 3,
+  centeredSlides: true,
+  mousewheel: {
+    enabled: true,
+    eventsTarget: ".auto-swiper__inner", // или 'container'
+    forceToAxis: true, // только горизонтальная прокрутка
+  },
+  touchEventsTarget: "container",
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 3,
+    },
+    750: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 new Swiper(".pasting__swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
