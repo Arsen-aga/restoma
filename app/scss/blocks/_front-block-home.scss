@@ -10,17 +10,29 @@
   }
 
   @include lg {
-    padding: 120px 0 80px;
+    padding: 150px 0 80px;
+    border-radius: 0 0 80px 80px;
   }
 
   @include sm {
     padding: 120px 0 40px;
+  }
+  .overlay{
+    @include lg {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &__inner {
     max-width: 850px;
     margin: 0 auto;
     position: relative;
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -38,21 +50,42 @@
     margin-bottom: 20px;
 
     @include xl {
-        font-size: 80px;
-        text-align: left;
-        margin-bottom: 15px;
+      font-size: 80px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    @include md {
+        font-size: 58px;
+        margin-bottom: 10px;
+    }
+
+    @include sm {
+        font-size: 46px;
+    }
+    @include xs {
+        font-size: 40px;
     }
   }
 
   &__subtitle {
     font-weight: 400;
     font-size: 28px;
-    line-height: calc(36/28*100%);
+    line-height: calc(36 / 28 * 100%);
     margin-bottom: 45px;
 
     @include xl {
-        font-size: 26px;
-        margin-bottom: 30px;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    @include lg {
+        font-size: 24px;
+    }
+    @include md {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    @include xs {
+        font-size: 20px;
     }
   }
 
@@ -62,7 +95,18 @@
     gap: 40px;
 
     @include xl {
-        gap: 30px;
+      gap: 30px;
+    }
+    @include lg {
+      order: 1;
+    }
+    @include md {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+        max-width: 350px;
+        width: 100%;
     }
   }
 
@@ -75,10 +119,10 @@
     align-items: center;
     gap: 20px;
 
-    &:hover{
+    &:hover {
       color: var(--primary);
 
-      .front-block-home__link-icon{
+      .front-block-home__link-icon {
         scale: 1.1;
       }
     }
@@ -87,11 +131,10 @@
   &__link-text {
     font-weight: 500;
     font-size: 18px;
-    line-height: calc(26/18*100%);
+    line-height: calc(26 / 18 * 100%);
     text-decoration: underline;
     text-underline-offset: 3px;
-    transition: all .3s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
   }
 
   &__slogan {
@@ -99,30 +142,41 @@
     right: -200px;
     top: 78px;
 
-    li::before{
+    li::before {
       display: none;
     }
 
     @include xl {
-        top: 50px;
-        right: -70px;
+      top: 50px;
+      right: -70px;
+    }
+
+    @include lg {
+      position: static;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
     }
   }
 
   &__slogan-text {
     padding: 5px 15px;
     background-color: var(--light-color);
-    box-shadow: -77px 147px 67px rgba(0, 0, 0, 0.01), -44px 83px 56px rgba(0, 0, 0, 0.05), -19px 37px 42px rgba(0, 0, 0, 0.09), -5px 9px 23px rgba(0, 0, 0, 0.1);
+    box-shadow: -77px 147px 67px rgba(0, 0, 0, 0.01),
+      -44px 83px 56px rgba(0, 0, 0, 0.05), -19px 37px 42px rgba(0, 0, 0, 0.09),
+      -5px 9px 23px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     width: fit-content;
     font-weight: 400;
     font-size: 20px;
-    line-height: calc(36/20*100%);
+    line-height: calc(36 / 20 * 100%);
 
     @include xl {
-        font-size: 18px;
+      font-size: 18px;
     }
+
 
     &:nth-child(1) {
       position: relative;
@@ -138,9 +192,17 @@
     &:nth-child(3) {
       transform: translateY(26px);
       rotate: -5.46deg;
-      
+
       @include xl {
         transform: translateY(5px);
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3){
+      @include lg {
+          rotate: 0deg;
+          transform: none;
       }
     }
   }
@@ -157,24 +219,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @include xl {
-        margin-top: 300px;
+      margin-top: 300px;
+    }
+    @include lg {
+      margin-top: 200px;
+      order: 2;
+    }
+    @include sm {
+        margin-top: 100px;
+        width: 65px;
+        height: 65px;
     }
 
-    &:hover{
+    &:hover {
       scale: 1.1;
       background-color: var(--primary);
     }
-    svg{
+    svg {
       height: 12px;
       width: 21px;
 
-      path{
-        fill: #DDDDDD;
+      path {
+        fill: #dddddd;
       }
     }
   }
-
 }
