@@ -1,109 +1,116 @@
 .diagnostics {
-    background-image: url('../images/diagnostics-bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 50px;
+  margin-top: var(--indent);
+  background-image: url("../images/diagnostics-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: var(--indent) 0;
+
+  &__suptitle {
+    padding: 15px 25px;
+    background-color: var(--accent);
+    color: var(--light-color);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    width: fit-content;
+    margin-bottom: 20px;
+    @include lg {
+        margin-bottom: 10px;
+    }
+
+    @include md {
+      padding: 10px;
+    }
+
+    @include sm {
+      font-size: 16px;
+    }
+
+    @include xs {
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__form {
+    padding: 50px 45px;
+    max-width: 490px;
+    box-shadow: var(--form-shadow);
+    background-color: var(--light-color);
     border-radius: 24px;
-
-    &__inner {
-        max-width: 625px;
-        width: 100%;
-
-        @include md {
-            max-width: inherit;
-        }
+    @include lg {
+        padding: 30px;
     }
 
-    &__subtitle {
-        padding: 15px 25px;
-        background-color: var(--accent);
-        color: var(--light-color);
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: calc(26/18 * 100%);
-        position: relative;
+    @include sm {
+      padding: 20px 15px;
+    }
+  }
 
-        @include md {
-            padding: 10px;
-        }
-
-        @include sm {
-            font-size: 16px;
-        }
-
-        @include xs {
-            font-size: 12px;
-        }
+  &__form-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: calc(40 / 32 * 100%);
+    @include lg {
+        font-size: 28px;
     }
 
-    &__title {
-        padding-top: 25px;
+    @include md {
+      font-size: 24px;
     }
 
-    &__form {
-        margin-top: 50px;
-        padding: 50px 45px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 490px;
-        width: 100%;
-        box-shadow: var(--form-shadow);
-        border-radius: 24px;
+    @include sm {
+      font-size: 22px;
+    }
+  }
 
-        @include sm {
-            margin-top: 20px;
-            padding: 20px 15px;
-        }
+  &__form-subtitle {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: calc(30 / 22 * 100%);
+    @include lg {
+        margin-top: 5px;
     }
 
-    &__form-title {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: calc(40/32 * 100%);
-
-        @include md {
-            font-size: 24px;
-        }
-
-        @include sm {
-            font-size: 20px;
-        }
+    @include md {
+      font-size: 18px;
     }
+  }
 
-    &__form-subtitle {
-        margin-top: 15px;
-        font-size: 22px;
-        line-height: calc(30/22 * 100%);
-
-        @include md {
-            font-size: 18px;
-        }
-    }
-
-    &__form-telephone {
-        margin-top: 30px;
-    }
-
-    &__form-button {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: calc(26/18 * 100%);
-        margin-top: 10px;
-
-        @include xs {
-            font-size: 14px;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
-
-    &__form-conditions {
+  &__form-inp {
+    margin-top: 30px;
+    @include xl {
         margin-top: 20px;
-        margin-left: 35px;
     }
+    @include lg {
+        margin-top: 15px;
+    }
+  }
+
+  &__form-button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(26 / 18 * 100%);
+    margin-top: 10px;
+
+    @include xs {
+      font-size: 14px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__form-conditions {
+    margin-top: 20px;
+    margin-left: 35px;
+  }
 }

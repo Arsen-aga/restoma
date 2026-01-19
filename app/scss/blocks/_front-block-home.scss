@@ -17,10 +17,10 @@
   @include sm {
     padding: 120px 0 40px;
   }
-  .overlay{
+  .overlay {
     @include lg {
-        display: block;
-        background-color: rgba(255, 255, 255, 0.5);
+      display: block;
+      background-color: rgba(255, 255, 255, 0.5);
     }
   }
 
@@ -55,15 +55,15 @@
       margin-bottom: 15px;
     }
     @include md {
-        font-size: 58px;
-        margin-bottom: 10px;
+      font-size: 58px;
+      margin-bottom: 10px;
     }
 
     @include sm {
-        font-size: 46px;
+      font-size: 46px;
     }
     @include xs {
-        font-size: 40px;
+      font-size: 40px;
     }
   }
 
@@ -78,14 +78,14 @@
       margin-bottom: 30px;
     }
     @include lg {
-        font-size: 24px;
+      font-size: 24px;
     }
     @include md {
-        font-size: 22px;
-        margin-bottom: 15px;
+      font-size: 22px;
+      margin-bottom: 15px;
     }
     @include xs {
-        font-size: 20px;
+      font-size: 20px;
     }
   }
 
@@ -101,17 +101,29 @@
       order: 1;
     }
     @include md {
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-        gap: 10px;
-        max-width: 350px;
-        width: 100%;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 10px;
+      max-width: 350px;
+      width: 100%;
     }
   }
 
   &__btn {
     max-width: 332px;
+    height: 100px;
+    @include xl {
+      height: 80px;
+    }
+
+    @include lg {
+      height: 75px;
+    }
+
+    @include sm {
+      height: 65px;
+    }
   }
 
   &__link {
@@ -177,7 +189,6 @@
       font-size: 18px;
     }
 
-
     &:nth-child(1) {
       position: relative;
       z-index: 1;
@@ -199,10 +210,10 @@
     }
     &:nth-child(1),
     &:nth-child(2),
-    &:nth-child(3){
+    &:nth-child(3) {
       @include lg {
-          rotate: 0deg;
-          transform: none;
+        rotate: 0deg;
+        transform: none;
       }
     }
   }
@@ -229,9 +240,9 @@
       order: 2;
     }
     @include sm {
-        margin-top: 100px;
-        width: 65px;
-        height: 65px;
+      margin-top: 100px;
+      width: 65px;
+      height: 65px;
     }
 
     &:hover {
