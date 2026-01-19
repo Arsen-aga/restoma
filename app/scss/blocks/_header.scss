@@ -11,6 +11,16 @@
     @include lg {
       padding: 10px 0;
     }
+
+    .search-btn{
+      display: none;
+
+      @include lg {
+          position: absolute;
+          right: 25px;
+          display: flex;
+      }
+    }
   }
 
   &__top-inner {
@@ -18,16 +28,32 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+    position: relative;
   }
 
   .logo {
     @include lg {
       max-width: 84px;
     }
+
+    @include xs {
+        max-width: 70px;
+    }
     &__text {
       @include lg {
         display: none;
       }
+    }
+  }
+
+  .geo{
+    @include md {
+        display: none;
+    }
+  }
+  .social-block{
+    @include sm {
+        display: none;
     }
   }
 
@@ -46,6 +72,12 @@
 
     @include xl {
       gap: 20px;
+    }
+  }
+
+  &__bottom{
+    @include lg {
+        display: none;
     }
   }
 

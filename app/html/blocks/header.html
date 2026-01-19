@@ -37,6 +37,9 @@
                 </div>
               </div>
             </div>
+            <button class="header__bottom-btn search-btn">
+              @@include('../../images/icons/search.svg')
+            </button>
           </div>
         </div>
         <div class="header__bottom">
@@ -80,14 +83,18 @@
         </div>
       </header>
       <form action="#" class="search-form">
-        <div class="search-form__inner">
-          <div class="search-form__icon">
-            @@include('../../images/icons/search.svg')
+        <div class="container">
+          <div class="search-form__inner">
+            <input
+              class="search-form__inp _input"
+              type="text"
+              name="search"
+              placeholder="Поиск.."
+            />
+            <button class="search-form__btn _main-btn" type="submit">
+              Поиск
+            </button>
           </div>
-          <input class="search-form__inp" type="text" name="search" />
-          <button class="search-form__btn _main-btn" type="submit">
-            Поиск
-          </button>
         </div>
       </form>
       <div class="popup-menu">
@@ -100,9 +107,9 @@
           <ul class="popup-menu__list">
             <li class="popup-menu__item">
               <a class="popup-menu__link" href="#key"> Услуги </a>
-              <ul class="popup-submenu">
-                <li class="popup-submenu__item">
-                  <a class="popup-submenu__link" href="#">Услуга</a>
+              <ul class="popup-menu__submenu">
+                <li class="popup-menu__submenu-item">
+                  <a class="popup-menu__submenu-link" href="#">Услуга</a>
                 </li>
               </ul>
             </li>
@@ -126,7 +133,6 @@
             </li>
           </ul>
         </nav>
+        @@include('../components/geo.html')
+        @@include('../components/social-block.html')
       </div>
-    </div>
-  </body>
-</html>

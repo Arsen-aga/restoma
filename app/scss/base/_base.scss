@@ -283,6 +283,31 @@ a {
   }
 }
 
+._input {
+  height: 96px;
+  border-radius: 14px;
+  padding: 35px;
+  width: 100%;
+  background-color: var(--gray-color);
+  border: 1px solid #F1F1F1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(26/18*100%);
+  color: var(--default-color);
+
+  @include lg {
+    height: 80px;
+    padding: 25px;
+  }
+
+  @include sm {
+    height: 65px;
+  }
+
+  &::placeholder {
+    color: rgba($color: #252A36, $alpha: 0.5);
+  }
+}
 
 
 
@@ -492,31 +517,6 @@ a {
   margin: 0 auto;
 }
 
-._input {
-  height: 100px;
-  background-color: var(--light-color);
-  border: 1px solid #F1F1F1;
-  border-radius: 100px;
-  padding: 37px 45px;
-  width: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(26/18*100%);
-
-  @include lg {
-    height: 80px;
-    padding: 25px;
-  }
-
-  @include sm {
-    height: 65px;
-  }
-
-  &::placeholder {
-    color: rgba(0, 0, 0, 0.4);
-    color: rgba($color: #0A0F13, $alpha: 0.5);
-  }
-}
 
 
 
