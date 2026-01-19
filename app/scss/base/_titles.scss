@@ -3,11 +3,11 @@
   text-align: center;
   font-weight: 400;
   font-size: 60px;
-  line-height: calc(68/60*100%);
+  line-height: calc(68 / 60 * 100%);
   color: var(--light-color);
   margin-bottom: 50px;
 
-  span{
+  span {
     color: var(--accent);
   }
 
@@ -34,7 +34,43 @@
     font-size: 26px;
     margin-bottom: 20px;
   }
+}
 
+._title-2 {
+  font-family: var(--font-default);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: calc(52 / 44 * 100%);
+  color: var(--default-color);
+  text-align: center;
+  margin-bottom: 60px;
+
+  span {
+    color: var(--blue-color);
+  }
+
+  @include xl {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    font-size: 30px;
+    margin-bottom: 25px;
+    br {
+      display: none;
+    }
+  }
+
+  @include sm {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
 }
 
 ._subtitle {
@@ -42,7 +78,7 @@
   text-align: center;
   font-weight: 400;
   font-size: 30px;
-  line-height: calc(38/30*100%);
+  line-height: calc(38 / 30 * 100%);
   color: var(--light-color);
   margin: 20px 0 50px;
 
@@ -73,5 +109,4 @@
   @include xs {
     font-size: 20px;
   }
-
 }

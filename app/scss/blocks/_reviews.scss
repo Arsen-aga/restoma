@@ -1,0 +1,149 @@
+.reviews {
+    max-width: 1754px;
+    width: 100%;
+    
+    &__bg {
+        position: absolute;
+        top: 100px;
+        max-width: 1754px;
+        width: 100%;
+        height: 138px;
+        z-index: 1;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 86px;
+        position: relative;
+        z-index: 2;
+
+        @include lg {
+            padding-top: 0;
+        }
+    }
+
+    &__inner {
+        padding-top: 50px;
+
+        @include md {
+            padding-top: 25px;
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+
+        @include lg {
+            flex-direction: column;
+        }
+    }
+
+    &__assessments {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        max-width: 359px;
+        width: 100%;
+
+        @include lg {
+            flex-direction: row;
+            max-width: inherit;
+            justify-content: center;
+        }
+
+        @include md {
+            gap: 20px;
+        }
+
+        @include sm {
+            gap: 30px;
+        }
+        
+        @include xs {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    &__assessments-text {
+        position: relative;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: calc(40/32 * 100%);
+
+        @include md {
+            font-size: 28px;
+        }
+
+        @include sm {
+            font-size: 20px;
+        }
+    }
+
+    &__assessments-img {
+        position: absolute;
+        width: 179px;
+        height: 30px;
+        bottom: 3px;
+        padding-left: 15px;
+
+        @include md {
+            width: 138px;
+            bottom: 10px;
+            padding-left: 5px;
+        }
+
+        @include sm {
+            bottom: 19px;
+            
+        }
+
+        @include xs {
+            bottom: -4px;
+        }
+    }
+
+    &__assessments-stars {
+        width: 178px;
+        height: 74px;
+    }
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include sm {
+            flex-direction: row;
+        }
+        
+    }
+
+    &__categories-top,&__categories-bottom {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        @include sm {
+            flex-direction: column;
+        }
+    }
+
+    &__categories-img {
+        height: 77px;
+
+        @include sm {
+            max-width: 300px;
+            width: 100%;
+            height: 60px;
+        }
+    }
+
+}

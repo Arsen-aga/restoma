@@ -1,0 +1,144 @@
+.service {
+    padding-top: 100px;
+
+    @include lg {
+        padding-top: 70px;
+    }
+
+    @include md {
+        padding-top: 50px;
+    }
+
+    @include sm {
+        padding-top: 30px;
+    }
+
+    &-periodontics {
+        min-height: 503px;
+
+        @include lg {
+            min-height: auto;
+        }
+    }
+
+    &__bg-img {
+
+        @include md {
+            filter: blur(7px) !important;
+        }
+    }
+
+
+
+
+    @include lg {
+        padding-top: 70px;
+    }
+
+    @include md {
+        padding-top: 50px;
+    }
+
+    @include sm {
+        padding-top: 30px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__block {
+        border-radius: 24px;
+        overflow: hidden;
+        margin-top: 50px;
+
+        @include md {
+            margin-top: 25px;
+        }
+
+        @include xs {
+            margin-top: 15px;
+        }
+    }
+
+    &__inner {
+        max-width: 800px;
+        width: 100%;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+        gap: 57px;
+        position: relative;
+        z-index: 3;
+
+        @include lg {
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+
+        @include sm {
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include md {
+            gap: 10px;
+        }
+        
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: calc(26/24 * 100%);
+        font-weight: 500;
+        text-decoration: underline 2px;
+        text-underline-offset: 5px;
+
+        @include lg {
+            font-size: 20px;
+        }
+
+        @include md {
+            font-size: 16px;
+            text-decoration: underline 1.5px;
+        }
+
+        @include sm {
+            font-size: 18px;
+        }
+    }
+
+    &__link-line {
+        line-height: calc(36/24 * 100%);
+    }
+
+    &__min-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 0;
+
+        @include md {
+            gap: 5px;
+        }
+    }
+
+    &__min-item {
+
+        @include md {
+            font-size: 14px;
+        }
+
+        @include sm {
+            font-size: 16px;
+        }
+    }
+}
