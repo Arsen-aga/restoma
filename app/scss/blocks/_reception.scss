@@ -1,200 +1,174 @@
 .reception {
-    background-image: url('../images/reception-bg.webp');
-    background-repeat: no-repeat;
-    border-radius: 24px;
+  background-image: url("../images/reception-bg.webp");
+  border-radius: 24px;
+  position: relative;
+  margin-top: 150px;
+  padding-top: var(--indent);
+
+  @include md {
+    padding-bottom: var(--indent);
+  }
+
+  &__girl {
+    width: 46.5755%;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+
+    @include lg {
+      display: none;
+    }
+  }
+  &__title {
+    margin: 0;
+    text-align: left;
+  }
+  &__description {
+    text-align: left;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 100px;
+    @include md {
+      gap: 20px;
+    }
+    @include sm {
+        flex-direction: column;
+    }
+  }
+
+  &__links {
+    display: grid;
+    gap: 20px;
+    @include md {
+      gap: 15px;
+      height: fit-content;
+    }
+  }
+
+  &__links-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(29 / 20 * 100%);
+    margin-bottom: 5px;
+  }
+
+  &__links-tel {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(40 / 32 * 100%);
+    color: var(--primary);
+    transition: var(--transition);
+
+    @include hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    @include md {
+      font-size: 24px;
+    }
+  }
+
+  &__links-soc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    line-height: calc(22 / 16 * 100%);
+  }
+
+  &__links-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__links-whatsapp {
+    color: var(--whatsapp-color);
+  }
+
+  &__links-telegram {
+    color: var(--telegram-color);
+  }
+
+  &__info {
+    display: grid;
+    gap: 25px;
+    @include md {
+      gap: 15px;
+    }
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__info-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color);
+
+    @include sm {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        min-height: 45px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+  }
+
+  &__route {
+    margin-top: 20px;
+    max-width: 690px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 
     @include xl {
-        background-size: cover;
+      max-width: 550px;
     }
-
-    &__girl {
-        max-width: 681px;
-        width: 100%;
-        height: 809px;
-        position: absolute;
-        right: 39px;
-        top: -50px;
-        z-index: 1;
-
-        @media(max-width: 1360px) {
-            max-width: 600px;
-        }
-
-        @include xl {
-            max-width: 350px;
-            height: 600px;
-            right: 20px;
-            top: 100px;
-        }
-
-        @include lg {
-            display: none;
-        }
+    @include sm {
+        margin-top: 15px;
     }
+  }
 
-    &__inner {
-        max-width: 691px;
-        width: 100%;
-        position: relative;
-        z-index: 2;
+  &__route-image {
+    max-width: 258px;
+    width: 100%;
 
+    @include md {
+      display: none;
     }
+  }
 
-    &__description {
-        font-size: 24px;
-        line-height: calc(32/24 * 100%);
-        padding-top: 15px;
-        text-align: center;
+  &__route-video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 43px;
 
-        @include sm {
-            font-size: 18px;
-        }
+    @include md {
+      margin-top: 20px;
     }
-
-    &__lists {
-        padding-top: 50px;
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-
-        @include md {
-            flex-direction: column;
-            align-items: center;
-            padding-top: 25px;
-        }
+    @include sm {
+        margin-top: 0;
     }
+  }
 
-    &__links {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    &__links-telephone {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    &__links-text {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    &__links-tel {
-        padding-top: 5px;
-        font-weight: 500;
-        font-size: 32px;
-        color: var(--primary);
-        transition: var(--transition);
-
-        @include hover {
-            color: var(--primary-hover);
-            text-decoration: underline 2px;
-            text-underline-offset: 2px;
-        }
-    }
-
-    &__links-item {
-        display: flex;
-        gap: 15px;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 16px;
-    }
-
-    &__links-link {
-        text-decoration: underline 1px;
-        text-underline-offset: 2px;
-    }
-
-    &__links-whatsapp {
-        color: var(--whatsapp-color);
-    }
-
-    &__links-telegram {
-        color: var(--telegram-color);
-    }
-
-    &__info {
-        display: flex;
-        gap: 25px;
-        flex-direction: column;
-    }
-
-    &__info-item {
-        display: flex;
-        gap: 15px;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    &__info-icon {
-        width: 56px;
-        height: 56px;
-        border-radius: 14px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--blue-color);
-    }
-
-    &__route {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        align-items: flex-start;
-
-        @include xl {
-            justify-content: flex-end;
-        }
-
-        @include md {
-            justify-content: center;
-        }
-    }
-
-    &__route-img {
-        margin-top: 20px;
-        max-width: 258px;
-        width: 100%;
-        height: 272px;
-        position: relative;
-        
-        @include xl {
-            position: absolute;
-            bottom: -100px;
-            height: 250px;
-            left: 0;
-        }
-
-        @include lg {
-            bottom: -70px;
-            height: 220px;
-            max-width: 220px;
-        }
-
-        @include md {
-            display: none;
-        }
-    }
-
-    &__route-video {
-        position: relative;
-        display: flex;
-        gap: 15px;
-        align-items: center;
-        margin-top: 56px;
-
-        @include md {
-            margin-top: 20px;
-        }
-
-    }
-
-    &__route-play {
-        width: 80px;
-        height: 80px;
-        position: relative;
-    }
+  &__route-play {
+    width: 80px;
+    height: 80px;
+    position: relative;
+  }
 }
