@@ -113,8 +113,10 @@
   &__btn {
     max-width: 332px;
     height: 100px;
+    font-size: 20px;
     @include xl {
       height: 80px;
+      font-size: 16px;
     }
 
     @include lg {
@@ -123,6 +125,7 @@
 
     @include sm {
       height: 65px;
+      font-size: 14px;
     }
   }
 

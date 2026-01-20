@@ -230,8 +230,8 @@ a {
   text-align: center;
   font-family: var(--font-default);
   font-weight: 500;
-  font-size: 20px;
-  line-height: calc(26 / 20 * 100%);
+  font-size: 18px;
+  line-height: calc(26 / 18 * 100%);
   box-shadow: 0px 15px 30px rgba(37, 111, 244, 0.15),
     inset 0px 10px 15px rgba(255, 255, 255, 0.15);
 
@@ -242,7 +242,6 @@ a {
 
   @include lg {
     height: 75px;
-    font-size: 16px;
   }
 
   @include sm {
@@ -433,6 +432,17 @@ a {
     }
   }
 }
+.main-img {
+  margin-top: var(--indent);
+  display: block;
+  position: relative;
+  padding-bottom: calc(920 / 1920 * 100%);
+  overflow: hidden;
+
+  @include md {
+    padding-bottom: 53%;
+  }
+}
 
 .play {
   position: absolute;
@@ -525,18 +535,7 @@ a {
   }
 }
 
-.main-img {
-  margin-top: var(--indent);
-  position: relative;
-  padding-bottom: calc(700 / 1920 * 100%);
-  border-radius: 40px;
-  overflow: hidden;
 
-  @include md {
-    border-radius: 20px;
-    padding-bottom: 53%;
-  }
-}
 
 .swiper-button-prev,
 .swiper-button-next {
