@@ -71,6 +71,16 @@
     ],
     "description": "xs"
   },
+  "hover": {
+    "scope": "css,scss",
+    "prefix": "@hover",
+    "body": [
+      "@include hover {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "hover"
+  },
   /* CSS, SCSS snippets */
   "bgimg: Background image": {
     "scope": "css,scss",

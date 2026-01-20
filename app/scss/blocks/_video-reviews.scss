@@ -20,9 +20,9 @@
     }
   }
 
-  &__video{
+  &__video {
     @include lg {
-        width: 320px;
+      width: 320px;
     }
   }
 
@@ -34,15 +34,15 @@
     margin-bottom: 22px;
     padding-bottom: calc(330 / 585 * 100%);
     @include lg {
-        border-radius: 16px;
+      border-radius: 16px;
     }
-    .play{
-        &__inner{
-            @include lg {
-                width: 60px;
-                height: 60px;
-            }
+    .play {
+      &__inner {
+        @include lg {
+          width: 60px;
+          height: 60px;
         }
+      }
     }
   }
 
@@ -53,8 +53,10 @@
     padding: 30px 40px;
 
     @include xl {
-        padding: 20px 25px;
-        br{display: none;}
+      padding: 20px 25px;
+      br {
+        display: none;
+      }
     }
 
     @include lg {
