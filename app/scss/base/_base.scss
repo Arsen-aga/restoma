@@ -291,7 +291,7 @@ a {
   line-height: calc(26 / 18 * 100%);
   color: var(--default-color);
 
-  @include lg {
+  @include xl {
     height: 80px;
     padding: 25px;
   }

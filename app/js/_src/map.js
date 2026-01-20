@@ -34,8 +34,8 @@ function initializeMap() {
     var myMap = new ymaps.Map(
       mapElement,
       {
-        center: [60.068588, 30.289494],
-        zoom: 14,
+        center: [55.738256, 37.659642],
+        zoom: 16,
       },
       {
         searchControlProvider: "yandex#search",
@@ -43,14 +43,14 @@ function initializeMap() {
     );
 
     var destinations = {
-      "Выборгское ш., 212, корп. 12А": [60.068588, 30.289494],
+      "г. Москва, ул. Марксистская, д.20, стр.1": [55.738256, 37.659642],
     };
 
     var myPlacemark = new ymaps.Placemark(
-      destinations["Выборгское ш., 212, корп. 12А"],
+      destinations["г. Москва, ул. Марксистская, д.20, стр.1"],
       {
         hintContent: "Офис",
-        balloonContent: "Выборгское ш., 212, корп. 12А",
+        balloonContent: "г. Москва, ул. Марксистская, д.20, стр.1",
       },
       {
         iconLayout: "default#image",
