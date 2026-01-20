@@ -38,6 +38,7 @@ new Swiper(".reviews__swiper", {
   touchEventsTarget: "container",
   breakpoints: {
     1230: {
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     767.98: {

@@ -333,6 +333,12 @@ a {
   width: 100%;
   margin: 0 auto;
 }
+
+._section-md {
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+}
 .cursor {
   display: none;
 
@@ -611,20 +617,6 @@ a {
   }
 }
 
-._section-md {
-  max-width: 1720px;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 90px;
-
-  @include lg {
-    border-radius: 40px;
-  }
-
-  @include sm {
-    border-radius: 30px;
-  }
-}
 
 .form {
   &__text {
