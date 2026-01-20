@@ -1,4 +1,4 @@
-const swiper = new Swiper(".auto-swiper__inner", {
+new Swiper(".auto-swiper__inner", {
   loop: true,
   slidesPerView: 2,
   spaceBetween: 15,
@@ -19,6 +19,30 @@ const swiper = new Swiper(".auto-swiper__inner", {
     },
     750: {
       slidesPerView: 4,
+    },
+  },
+});
+new Swiper(".reviews__swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  navigation: {
+  nextEl: ".reviews__swiper-wrapper .swiper-button-next",
+  prevEl: ".reviews__swiper-wrapper .swiper-button-prev",
+},
+  mousewheel: {
+    enabled: true,
+    eventsTarget: ".reviews__swiper", // или 'container'
+    forceToAxis: true, // только горизонтальная прокрутка
+  },
+  touchEventsTarget: "container",
+  breakpoints: {
+    1230: {
+      spaceBetween: 30,
+    },
+    767.98: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
   },
 });

@@ -487,6 +487,56 @@ a {
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  &:active,
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+
+  &::after {
+    color: var(--light-color);
+    font-size: 14px;
+  }
+}
+
+.swiper-button-prev {
+  left: 0;
+
+  @media (max-width: 1600px) {
+    left: 30px;
+  }
+}
+
+.swiper-button-next {
+  right: 0;
+
+  @media (max-width: 1600px) {
+    right: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 ._whatsapp-btn {
   display: flex;
   justify-content: center;
@@ -537,43 +587,7 @@ a {
 
 
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 40px;
-  height: 40px;
-  background-color: var(--accent);
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
 
-  &:active,
-  &:hover {
-    background-color: var(--accent-hover);
-  }
-
-  &::after {
-    color: var(--light-color);
-    font-size: 14px;
-  }
-}
-
-.swiper-button-prev {
-  left: 0;
-
-  @media (max-width: 1600px) {
-    left: 30px;
-  }
-}
-
-.swiper-button-next {
-  right: 0;
-
-  @media (max-width: 1600px) {
-    right: 30px;
-  }
-}
 
 .swiper-pagination {
   display: flex;
