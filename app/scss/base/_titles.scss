@@ -77,24 +77,20 @@
   font-family: var(--font-default);
   text-align: center;
   font-weight: 400;
-  font-size: 30px;
-  line-height: calc(38 / 30 * 100%);
-  color: var(--light-color);
-  margin: 20px 0 50px;
+  font-size: 24px;
+  line-height: calc(32 / 24 * 100%);
+  margin: 15px 0 50px;
 
   @include xl {
-    font-size: 28px;
     margin-bottom: 40px;
   }
 
   @include lg {
-    font-size: 26px;
     margin-bottom: 30px;
   }
 
   @include md {
-    font-size: 24px;
-    margin: 15px 0 25px;
+    margin-bottom: 25px;
 
     br {
       display: none;

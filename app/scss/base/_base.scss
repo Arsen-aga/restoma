@@ -60,7 +60,6 @@ a {
   color: var(--light-color);
 }
 
-
 .logo {
   max-width: 243px;
   width: 100%;
@@ -71,14 +70,13 @@ a {
   &__text {
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(24/16*100%);
+    line-height: calc(24 / 16 * 100%);
 
     @include xs {
       font-size: 12px;
     }
   }
 }
-
 
 .geo {
   display: flex;
@@ -98,7 +96,7 @@ a {
   &__text {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(24/16*100%);
+    line-height: calc(24 / 16 * 100%);
     text-decoration: underline;
     text-underline-offset: 3px;
 
@@ -120,10 +118,10 @@ a {
   &__text {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(24/16*100%);
+    line-height: calc(24 / 16 * 100%);
 
     @include xl {
-        font-size: 14px;
+      font-size: 14px;
     }
   }
 
@@ -143,8 +141,8 @@ a {
     min-width: 52px;
     padding: 10px;
     border-radius: 50%;
-    transition: all .3s ease-in-out;
-    
+    transition: all 0.3s ease-in-out;
+
     @include xl {
       height: 42px;
       width: 42px;
@@ -163,7 +161,6 @@ a {
     &:hover {
       background-color: var(--whatsapp-hover);
     }
-
   }
 
   &__telegram {
@@ -172,7 +169,6 @@ a {
     &:hover {
       background-color: var(--telegram-hover);
     }
-
   }
 }
 
@@ -187,7 +183,7 @@ a {
     gap: 10px;
     font-weight: 500;
     font-size: 26px;
-    line-height: calc(34/26*100%);
+    line-height: calc(34 / 26 * 100%);
 
     @include xl {
       font-size: 20px;
@@ -201,11 +197,11 @@ a {
   &__link {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(22/16*100%);
+    line-height: calc(22 / 16 * 100%);
     text-decoration: underline;
     text-underline-offset: 3px;
     color: var(--primary);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: var(--primary-hover);
@@ -215,7 +211,6 @@ a {
       font-size: 14px;
     }
   }
-
 }
 
 ._link-btn,
@@ -226,23 +221,24 @@ a {
   padding: 12px;
   width: 100%;
   height: 96px;
+  gap: 20px;
   background-color: var(--primary);
   border-radius: 14px;
   color: var(--light-color);
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-align: center;
   font-family: var(--font-default);
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(26/20*100%);
-  box-shadow: 0px 15px 30px rgba(37, 111, 244, 0.15), inset 0px 10px 15px rgba(255, 255, 255, 0.15);
+  line-height: calc(26 / 20 * 100%);
+  box-shadow: 0px 15px 30px rgba(37, 111, 244, 0.15),
+    inset 0px 10px 15px rgba(255, 255, 255, 0.15);
 
   @include xl {
     font-size: 16px;
     height: 80px;
   }
-
 
   @include lg {
     height: 75px;
@@ -252,11 +248,13 @@ a {
   @include sm {
     height: 65px;
     font-size: 14px;
+    gap: 15px;
   }
 
   &:hover {
     background-color: var(--primary-hover);
-    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15),
+      inset 0px 5px 30px rgba(255, 255, 255, 0.2);
   }
 
   &:active {
@@ -265,12 +263,12 @@ a {
   }
 }
 
-._link-btn{
+._link-btn {
   position: relative;
 
-  &::after{
+  &::after {
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     top: 15px;
     right: 17px;
@@ -288,10 +286,10 @@ a {
   padding: 35px;
   width: 100%;
   background-color: var(--gray-color);
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   font-weight: 400;
   font-size: 18px;
-  line-height: calc(26/18*100%);
+  line-height: calc(26 / 18 * 100%);
   color: var(--default-color);
 
   @include lg {
@@ -299,7 +297,7 @@ a {
     padding: 25px;
   }
   @include lg {
-      height: 75px;
+    height: 75px;
   }
 
   @include sm {
@@ -307,7 +305,7 @@ a {
   }
 
   &::placeholder {
-    color: rgba($color: #252A36, $alpha: 0.5);
+    color: rgba($color: #252a36, $alpha: 0.5);
   }
 }
 
@@ -318,15 +316,15 @@ a {
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 5px;
       height: 5px;
       border-radius: 50%;
       background-color: var(--accent);
       left: 0;
       top: 11px;
-            @include xs {
-          top: 8px;
+      @include xs {
+        top: 8px;
       }
     }
   }
@@ -361,11 +359,10 @@ a {
     display: none !important;
   }
 
-  input:checked+span svg {
+  input:checked + span svg {
     scale: 1;
     opacity: 1;
   }
-
 
   &__check {
     margin-top: 2px;
@@ -382,7 +379,7 @@ a {
   &__text {
     font-weight: 400;
     font-size: 12px;
-    line-height: calc(20/12*100%);
+    line-height: calc(20 / 12 * 100%);
     color: #939393;
 
     a {
@@ -393,23 +390,16 @@ a {
   }
 
   svg {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     scale: 0;
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.divider {
+  margin-top: var(--indent);
+  height: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
 
 ._loading-btn {
   background-color: var(--light-color);
@@ -421,12 +411,6 @@ a {
     background-color: var(--accent-hover);
   }
 }
-
-
-
-
-
-
 
 .play {
   position: absolute;
@@ -445,7 +429,8 @@ a {
     .play__inner {
       scale: 1.25;
       background-color: var(--accent-hover);
-      box-shadow: 0px 15px 30px 0px rgba(154, 202, 161, 0.15), inset 0px 10px 15px 0px rgba(255, 255, 255, 0.15);
+      box-shadow: 0px 15px 30px 0px rgba(154, 202, 161, 0.15),
+        inset 0px 10px 15px 0px rgba(255, 255, 255, 0.15);
     }
   }
 
@@ -464,8 +449,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s ease-in-out;
-    box-shadow: 0px 15px 30px 0px rgba(154, 202, 161, 0.15), inset 0px 10px 15px 0px rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 15px 30px 0px rgba(154, 202, 161, 0.15),
+      inset 0px 10px 15px 0px rgba(255, 255, 255, 0.15);
   }
 }
 
@@ -478,22 +464,22 @@ a {
   width: 100%;
   height: 100px;
   background: var(--whatsapp-color);
-  box-shadow: 0px 15px 30px rgba(39, 211, 104, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 15px 30px rgba(39, 211, 104, 0.15),
+    inset 0px 5px 30px rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   font-family: var(--font-default);
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(26/18*100%);
+  line-height: calc(26 / 18 * 100%);
   text-align: center;
   color: var(--light-color);
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   @include xl {
     font-size: 16px;
     height: 90px;
   }
-
 
   @include lg {
     height: 80px;
@@ -507,7 +493,8 @@ a {
 
   &:hover {
     background-color: var(--primary-hover);
-    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15), inset 0px 5px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 15px 30px rgba(245, 45, 58, 0.15),
+      inset 0px 5px 30px rgba(255, 255, 255, 0.2);
   }
 
   &:active {
@@ -516,21 +503,10 @@ a {
   }
 }
 
-
-.divider {
-  width: 100%;
-  height: 1px;
-  margin-top: var(--indent);
-  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 50.48%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0.1;
-}
-
-
-
 .main-img {
   margin-top: var(--indent);
   position: relative;
-  padding-bottom: calc(700/1920*100%);
+  padding-bottom: calc(700 / 1920 * 100%);
   border-radius: 40px;
   overflow: hidden;
 
@@ -549,7 +525,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:active,
   &:hover {
@@ -590,7 +566,7 @@ a {
     height: 8px;
     background-color: var(--light-color);
     opacity: 0.4;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin: 0 !important;
   }
 
@@ -599,13 +575,6 @@ a {
     background-color: var(--accent);
   }
 }
-
-
-
-
-
-
-
 
 ._section-md {
   max-width: 1720px;
@@ -622,19 +591,11 @@ a {
   }
 }
 
-
-
-
-
-
-
-
-
 .form {
   &__text {
     font-weight: 700;
     font-size: 12px;
-    line-height: calc(20/12*100%);
+    line-height: calc(20 / 12 * 100%);
     text-transform: uppercase;
     opacity: 0.5;
     margin-bottom: 10px;
@@ -653,7 +614,6 @@ a {
       flex-wrap: wrap;
       max-width: none;
     }
-
   }
 
   &__label {
@@ -664,7 +624,7 @@ a {
       display: none;
     }
 
-    input:checked+.form__label-inner {
+    input:checked + .form__label-inner {
       color: var(--light-color) !important;
       border-color: transparent;
 
@@ -673,14 +633,13 @@ a {
       }
     }
 
-    input:checked+.phone {
+    input:checked + .phone {
       background-color: var(--primary);
     }
 
-    input:checked+.whatsapp {
+    input:checked + .whatsapp {
       background-color: var(--whatsapp-color);
     }
-
   }
 
   &__label-inner {
@@ -694,15 +653,15 @@ a {
     gap: 10px;
     padding: 10px;
     width: 100%;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(22/14*100%);
+    line-height: calc(22 / 14 * 100%);
     text-align: center;
     color: #939393;
 
     svg path {
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     &.phone:hover {
@@ -750,7 +709,7 @@ a {
   &__file-inner {
     width: 100%;
     height: 96px;
-    border: 1px solid #F1F1F1;
+    border: 1px solid #f1f1f1;
     border-radius: 13px;
     display: flex;
     align-items: center;
@@ -766,25 +725,18 @@ a {
   &__file-text {
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(26/18*100%);
+    line-height: calc(26 / 18 * 100%);
     color: var(--primary);
   }
-
-
 }
-
 
 ._image {
   width: 100%;
   height: 100%;
 }
 
-
-
-
-
 ._link-hover {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: var(--primary);
@@ -801,44 +753,41 @@ a {
   line-height: 0;
 }
 
-
-
-
 .loader-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .spinner {
-    animation: elegantSpin 3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-    transform-origin: center;
+  animation: elegantSpin 3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  transform-origin: center;
 }
 
 @keyframes elegantSpin {
-    0% {
-        transform: rotate(0deg) scale(1);
-        opacity: 0.8;
-    }
-    50% {
-        transform: rotate(180deg) scale(1.1);
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
-        opacity: 0.8;
-    }
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
 }
 
 /* Для темного фона */
 .dark .spinner path {
-    fill: white;
+  fill: white;
 }
 
 /* Адаптация */
 @media (max-width: 768px) {
-    .spinner {
-        width: 20px;
-        height: 20px;
-    }
+  .spinner {
+    width: 20px;
+    height: 20px;
+  }
 }
