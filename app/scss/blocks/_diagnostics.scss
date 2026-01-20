@@ -1,11 +1,17 @@
 .diagnostics {
   margin-top: var(--indent);
-  background-image: url("../images/diagnostics-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 30px;
   padding: var(--indent) 0;
+  
+  &.bg-woman{
+    background-image: url("../images/bg-woman.webp");
+  }
+  &.bg-man{
+    background-image: url("../images/bg-man.webp");
+  }
 
   &__suptitle {
     padding: 15px 25px;

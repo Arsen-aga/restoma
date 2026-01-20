@@ -538,8 +538,723 @@
   </div>
 </section>
 
+  <section class="consult-form">
+  <div class="container">
+    <form
+      method="POST"
+      action="#"
+      enctype="multipart/form-data"
+      class="form-submit relative consult-form__form"
+    >
+      <input
+        type="hidden"
+        name="from"
+        class="from"
+        value="Записать на первичную видео-консультацию"
+      />
+      <input
+        type="hidden"
+        name="newToken"
+        value="<?php echo (rand(10000, 99999)) ?>"
+      />
+      <h2 class="consult-form__title">
+        Получите консультацию по телефону<br />
+        или видеосвязи, не выходя из дома
+      </h2>
+      <p class="consult-form__subtitle">
+        Введите ваш номер телефона в форме ниже и мы<br />
+        выберем удобное время для видео-консультации
+      </p>
+      <div class="consult-form__inner">
+        <div class="consult-form__inputs">
+          <input
+            class="consult-form__inp _input"
+            type="tel"
+            name="phone"
+            placeholder="Введите номер телефона"
+            required
+          />
+          <button class="consult-form__btn _main-btn">
+            Записать на первичную<br />
+            видео-консультацию
+          </button>
+        </div>
+        <label class="checkbox-block">
+          <input type="checkbox" name="access" required checked />
+          <span class="checkbox-block__check">
+            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.7785 1.70775L4.5355 5.95275C4.1445 6.34375 3.5115 6.34375 3.1215 5.95275L0.2925 3.12075C-0.0975 2.73075 -0.0975 2.10375 0.2925 1.70775C0.6835 1.31375 1.3165 1.31375 1.7075 1.70775L3.8285 3.83075L7.3635 0.29475C7.7545 -0.09825 8.3875 -0.09825 8.7785 0.29475C9.1685 0.69075 9.1685 1.31375 8.7785 1.70775Z" fill="#4487FF"/>
+</svg>
 
-  <div class="divider"></div>
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия
+            <a data-fancybox="" class="_link" href="#politics" data-fancybox=""
+              >политики конфиденциальности</a
+            >
+          </span>
+        </label>
+      </div>
+      <img
+        class="consult-form__stars"
+        src="images/front-block-service-pic.webp"
+        alt="front-block-service-pic"
+      />
+      <img
+        class="consult-form__phone"
+        src="images/consult-form-phone.webp"
+        alt="consult-form-phone"
+      />
+    </form>
+  </div>
+</section>
+ 
+  <section class="what-is">
+  <div class="container relative">
+    <div class="what-is__inner">
+      <h2 class="what-is__title _title-2">
+        Что такое<br />
+        имплантация<br />
+        зубов
+      </h2>
+      <div class="what-is__content">
+        <h3 class="what-is__content-title">
+          Цифровая замена утраченного зуба<br />
+          — с точной фиксацией и естественным<br />
+          внешним видом
+        </h3>
+        <p class="what-is__content-text">
+          Имплантация — это восстановление утраченного<br />
+          зуба с помощью титаново-керамической конструкции.<br />
+          Имплант заменяет корень, а коронка — видимую часть<br />
+          зуба. Результат неотличим от естественного и <br />
+          служит десятилетиями
+        </p>
+      </div>
+    </div>
+    <div class="what-is__logo">
+      <svg width="924" height="826" viewBox="0 0 924 826" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M910.587 632.406C786.63 751.742 618.135 825.112 432.501 825.112C355.713 825.112 281.872 812.535 212.877 789.377C174.451 777.212 188.421 721.267 231.187 735.111C294.416 756.336 362.112 767.867 432.501 767.867C602.676 767.867 757.106 700.643 870.767 591.286C903.047 559.765 945.021 599.206 910.587 632.406ZM410.136 0.0219749C434.37 0.0219749 456.64 3.91854 476.945 11.7117C497.283 19.5365 515.498 31.2262 531.59 46.7807C563.933 78.0166 580.089 116.761 580.089 163.012C580.089 181.735 577.333 199.38 571.79 215.98C566.246 232.58 557.978 248.008 546.954 262.264C535.93 276.488 523.132 288.399 508.592 297.967C496.364 306.013 474.284 319.699 459.712 324.387C493.26 397.06 532.002 441.189 575.464 488.645C603.531 519.311 566.309 554.031 535.835 527.484C488.001 485.889 421.35 386.606 395.248 329.012C346.653 329.044 298.851 329.044 251.176 329.076V417.24V504.358C251.239 524.252 236.065 537.368 220.891 537.273C205.718 537.178 190.544 523.904 190.607 504.358C190.607 444.991 190.607 386.986 190.544 329.139C138.497 329.139 86.2596 329.171 32.9138 329.171C13.3684 329.266 0.0952633 314.091 0.000229087 298.917C-0.0631271 283.743 13.0199 268.568 32.9138 268.6C116.892 268.6 164.473 268.6 190.512 268.6C190.48 218.04 190.481 167.257 190.481 115.462C190.385 95.9155 205.559 82.6418 220.733 82.5468C235.907 82.4834 251.081 95.567 251.017 115.462C251.017 167.606 251.176 216.265 251.176 268.473C283.139 268.473 335.978 268.441 421.794 268.441C422.712 268.441 423.599 268.473 424.486 268.536C449.385 265.875 470.515 256.055 487.906 239.075C498.17 229.032 505.899 217.723 511.031 205.083C516.163 192.411 518.76 178.409 518.76 163.012C518.76 147.838 516.194 133.962 511.063 121.417C505.931 108.872 498.201 97.4994 487.874 87.267C477.547 77.0979 465.953 69.4632 453.06 64.3628C440.135 59.2624 425.817 56.7281 410.136 56.7281C365.375 55.4292 365.375 -1.27688 410.136 0.0219749Z" fill="#FAFAFA"/>
+</svg>
+
+    </div>
+  </div>
+</section>
+
+  <section class="symptoms">
+  <div class="container">
+    <h2 class="symptoms__title _title-2">
+      Когда необходимо установить имплант
+    </h2>
+    <div class="cursor @@class">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+    <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <path class="tooltip-horizontal-scroll-icon_hand"
+      d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+      fill="rgba(190,190,190,1)"></path>
+    <style>
+      .tooltip-horizontal-scroll-icon_hand {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+      }
+
+      .tooltip-horizontal-scroll-icon_card {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+        0% {
+          transform: translateX(80px) scale(1);
+          opacity: 0
+        }
+
+        10% {
+          transform: translateX(80px) scale(1);
+          opacity: 1
+        }
+
+        20%,
+        60% {
+          transform: translateX(175px) scale(.6);
+          opacity: 1
+        }
+
+        80% {
+          transform: translateX(5px) scale(.6);
+          opacity: 1
+        }
+
+        to {
+          transform: translateX(5px) scale(.6);
+          opacity: 0
+        }
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+        0%,
+        60% {
+          transform: translateX(0)
+        }
+
+        80%,
+        to {
+          transform: translateX(-240px)
+        }
+      }
+    </style>
+  </svg>
+</div>
+    <div class="symptoms__items">
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Потеря одного,<br />
+          нескольких или<br />
+          всех зубов
+        </p>
+      </div>
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Разрушение зуба<br />
+          под корень
+        </p>
+      </div>
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Отсутствие жевательных<br />
+          зубов (невозможно<br />
+          установить мост)
+        </p>
+      </div>
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Нестабильные,<br />
+          неудобные съёмные<br />
+          протезы
+        </p>
+      </div>
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Желание восстановить<br />
+          эстетику и жевательную<br />
+          функцию
+        </p>
+      </div>
+      <div class="symptoms__item">
+        <div class="symptoms__item-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 0C4.93428 0 0 4.93429 0 11C0 17.0657 4.93428 22 11 22C13.6769 22 16.1386 21.0399 18.0471 19.4464C18.2069 19.3129 18.3073 19.1214 18.326 18.9139C18.3447 18.7065 18.2803 18.5001 18.1469 18.3401C18.0133 18.1803 17.8218 18.08 17.6144 18.0612C17.4069 18.0425 17.2005 18.107 17.0406 18.2404C15.3474 19.6581 13.2083 20.433 11 20.4286C5.78286 20.4286 1.57143 16.2171 1.57143 11C1.57143 5.78286 5.78286 1.57143 11 1.57143C16.2171 1.57143 20.4286 5.78286 20.4286 11C20.4286 12.5573 20.053 14.0211 19.3867 15.3136C19.3393 15.4053 19.3104 15.5055 19.3017 15.6083C19.2931 15.7112 19.3047 15.8148 19.3361 15.9132C19.3675 16.0115 19.418 16.1027 19.4846 16.1816C19.5513 16.2605 19.6328 16.3254 19.7246 16.3727C19.9097 16.4682 20.1252 16.4863 20.3237 16.4229C20.5222 16.3596 20.6873 16.22 20.7829 16.0349C21.5849 14.4778 22.0022 12.7514 22 11C22 4.93429 17.0657 0 11 0Z" fill="white"/>
+<path d="M11 4.71429C10.7916 4.71429 10.5918 4.79707 10.4444 4.94442C10.2971 5.09177 10.2143 5.29162 10.2143 5.5V14.1429C10.2143 14.3512 10.2971 14.5511 10.4444 14.6984C10.5918 14.8458 10.7916 14.9286 11 14.9286C11.2084 14.9286 11.4082 14.8458 11.5556 14.6984C11.7029 14.5511 11.7857 14.3512 11.7857 14.1429V5.5C11.7857 5.29162 11.7029 5.09177 11.5556 4.94442C11.4082 4.79707 11.2084 4.71429 11 4.71429ZM11.7857 16.5C11.7857 16.7084 11.7029 16.9082 11.5556 17.0556C11.4082 17.2029 11.2084 17.2857 11 17.2857C10.7916 17.2857 10.5918 17.2029 10.4444 17.0556C10.2971 16.9082 10.2143 16.7084 10.2143 16.5C10.2143 16.2916 10.2971 16.0918 10.4444 15.9444C10.5918 15.7971 10.7916 15.7143 11 15.7143C11.2084 15.7143 11.4082 15.7971 11.5556 15.9444C11.7029 16.0918 11.7857 16.2916 11.7857 16.5Z" fill="white"/>
+</svg>
+
+        </div>
+        <p class="symptoms__item-text">
+          Предотвращение<br />
+          атрофии костной<br />
+          ткани
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <section class="diagnostics _section-lg bg-man">
+  <div class="container">
+    <div class="diagnostics__inner">
+      <p class="diagnostics__suptitle">
+        Бесплатная полная диагностика до 25 марта
+      </p>
+      <h2 class="diagnostics__title _title-2">
+        3D-снимок + ОПТГ + анализ<br />
+        искусственным интеллектом<br />
+        + 3 плана лечения <span>за 0 руб.</span>
+      </h2>
+      <form
+        action="#"
+        method="POST"
+        enctype="multipart/form-data"
+        class="diagnostics__form form-submit"
+      >
+        <input
+          type="hidden"
+          name="from"
+          class="from"
+          value="Бесплатная полная диагностика до 25 марта"
+        />
+        <input
+          type="hidden"
+          name="newToken"
+          value="<?php echo (rand(10000, 99999)) ?>"
+        />
+        <h3 class="diagnostics__form-title">
+          Введите ваш номер телефона в форме ниже
+        </h3>
+        <p class="diagnostics__form-subtitle">
+          и мы подберем удобное время проведения диагностики
+        </p>
+        <input
+          type="tel"
+          class="diagnostics__form-inp _input"
+          placeholder="Введите номер телефона"
+          name="phone"
+        />
+        <button type="submit" class="diagnostics__form-button _link-btn">
+          Пройти полную диагностику бесплатно
+        </button>
+        <label class="checkbox-block">
+          <input type="checkbox" name="access" required checked />
+          <span class="checkbox-block__check">
+            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.7785 1.70775L4.5355 5.95275C4.1445 6.34375 3.5115 6.34375 3.1215 5.95275L0.2925 3.12075C-0.0975 2.73075 -0.0975 2.10375 0.2925 1.70775C0.6835 1.31375 1.3165 1.31375 1.7075 1.70775L3.8285 3.83075L7.3635 0.29475C7.7545 -0.09825 8.3875 -0.09825 8.7785 0.29475C9.1685 0.69075 9.1685 1.31375 8.7785 1.70775Z" fill="#4487FF"/>
+</svg>
+
+          </span>
+          <span class="checkbox-block__text">
+            Я принимаю условия
+            <a data-fancybox="" class="_link" href="#politics" data-fancybox=""
+              >политики конфиденциальности</a
+            >
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <div class="_gray-wrapper _section-lg">
+    <section class="quotation">
+  <div class="container">
+    <div class="quotation__inner _image-wrapper">
+      <h3 class="quotation__title">
+        «Имплантация сегодня — это не хирургия,<br />
+        это инженерная процедура. Мы моделируем<br />
+        всё заранее, контролируем каждый миллиметр<br />
+        и даём результат, к которому не придраться»
+      </h3>
+      <p class="quotation__name">
+        Тимошенко Артем Дмитриевич, врач-стоматолог Restoma
+      </p>
+      <img
+        class="quotation__img"
+        src="images/quotation-human.webp"
+        alt="human"
+      />
+    </div>
+  </div>
+</section>
+
+    <section class="service-cards">
+  <div class="container">
+    <h2 class="service-cards__title _title-2">
+      Восстанавливаем любой объём<br />
+      потерь — от одного зуба до полной челюсти
+    </h2>
+    <div class="cursor @@class">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+    <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <path class="tooltip-horizontal-scroll-icon_hand"
+      d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+      fill="rgba(190,190,190,1)"></path>
+    <style>
+      .tooltip-horizontal-scroll-icon_hand {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+      }
+
+      .tooltip-horizontal-scroll-icon_card {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+        0% {
+          transform: translateX(80px) scale(1);
+          opacity: 0
+        }
+
+        10% {
+          transform: translateX(80px) scale(1);
+          opacity: 1
+        }
+
+        20%,
+        60% {
+          transform: translateX(175px) scale(.6);
+          opacity: 1
+        }
+
+        80% {
+          transform: translateX(5px) scale(.6);
+          opacity: 1
+        }
+
+        to {
+          transform: translateX(5px) scale(.6);
+          opacity: 0
+        }
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+        0%,
+        60% {
+          transform: translateX(0)
+        }
+
+        80%,
+        to {
+          transform: translateX(-240px)
+        }
+      }
+    </style>
+  </svg>
+</div>
+    <div class="service-cards__items">
+      <div class="service-cards__item">
+        <img
+          class="service-cards__item-img _img"
+          src="images/service-cards-1.webp"
+          alt="service-cards-1"
+        />
+        <div class="overlay"></div>
+        <div class="service-cards__item-inner">
+          <h4 class="service-cards__item-title">Имплантация одного зуба</h4>
+          <p class="service-cards__item-text">
+            Устанавливаем 1 имплант<br />
+            и коронку — без затрагивания<br />
+            соседних зубов
+          </p>
+          <ul class="service-cards__item-list list-point">
+            <li class="service-cards__item-point">
+              Возможно одномоментно<br />
+              после удаления
+            </li>
+            <li class="service-cards__item-point">
+              Не нужно обтачивать соседние<br />
+              зубы (в отличие от моста)
+            </li>
+            <li class="service-cards__item-point">
+              Эстетика на уровне родного зуба
+            </li>
+          </ul>
+          <a class="service-cards__item-btn _main-btn" href="#">
+            Узнать подробнее
+          </a>
+        </div>
+      </div>
+      <div class="service-cards__item">
+        <img
+          class="service-cards__item-img _img"
+          src="images/service-cards-2.webp"
+          alt="service-cards-2"
+        />
+        <div class="overlay"></div>
+        <div class="service-cards__item-inner">
+          <h4 class="service-cards__item-title">
+            Имплантация<br />
+            нескольких зубов
+          </h4>
+          <p class="service-cards__item-text">
+            Устанавливаем 2–3 импланта<br />
+            и фиксируем мостовидную<br />
+            конструкцию или покрывной протез
+          </p>
+          <ul class="service-cards__item-list list-point">
+            <li class="service-cards__item-point">
+              Подходит при протяжённых дефектах
+            </li>
+            <li class="service-cards__item-point">
+              Имплантов меньше, чем<br />
+              утраченных зубов (экономичнее)
+            </li>
+            <li class="service-cards__item-point">
+              Никаких съёмных протезов —<br />
+              только жёсткая фиксация
+            </li>
+          </ul>
+          <a class="service-cards__item-btn _main-btn" href="#">
+            Узнать подробнее
+          </a>
+        </div>
+      </div>
+      <div class="service-cards__item">
+        <img
+          class="service-cards__item-img _img"
+          src="images/service-cards-3.webp"
+          alt="service-cards-3"
+        />
+        <div class="overlay"></div>
+        <div class="service-cards__item-inner">
+          <h4 class="service-cards__item-title">Тотальная имплантация</h4>
+          <p class="service-cards__item-text">
+            На 4–6 имплантах фиксируется<br />
+            несъёмный зубной ряд — временный<br />
+            уже в день операции, постоянный<br />
+            через 3–4 месяца
+          </p>
+          <ul class="service-cards__item-list list-point">
+            <li class="service-cards__item-point">
+              Возможна установка в 1 день <br />
+              импланты + временные зубы)
+            </li>
+            <li class="service-cards__item-point">
+              Удобство, комфорт, крепкая<br />
+              фиксация — как свои зубы
+            </li>
+            <li class="service-cards__item-point">
+              Подходит при атрофии кости<br />
+              с минимальной пластикой
+            </li>
+          </ul>
+          <a class="service-cards__item-btn _main-btn" href="#">
+            Узнать подробнее
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="procedure-underway">
+  <div class="container">
+    <h2 class="procedure-underway__title _title-2">Как проходит процедура</h2>
+    <div class="cursor @@class">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+    <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+      fill="rgba(190,190,190,0.3)"></rect>
+    <path class="tooltip-horizontal-scroll-icon_hand"
+      d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+      fill="rgba(190,190,190,1)"></path>
+    <style>
+      .tooltip-horizontal-scroll-icon_hand {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+      }
+
+      .tooltip-horizontal-scroll-icon_card {
+        animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+        0% {
+          transform: translateX(80px) scale(1);
+          opacity: 0
+        }
+
+        10% {
+          transform: translateX(80px) scale(1);
+          opacity: 1
+        }
+
+        20%,
+        60% {
+          transform: translateX(175px) scale(.6);
+          opacity: 1
+        }
+
+        80% {
+          transform: translateX(5px) scale(.6);
+          opacity: 1
+        }
+
+        to {
+          transform: translateX(5px) scale(.6);
+          opacity: 0
+        }
+      }
+
+      @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+
+        0%,
+        60% {
+          transform: translateX(0)
+        }
+
+        80%,
+        to {
+          transform: translateX(-240px)
+        }
+      }
+    </style>
+  </svg>
+</div>
+    <div class="procedure-underway__items">
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">
+          Диагностика и <br />
+          3D-планирование <br />
+          (КТ + сканирование)
+        </h4>
+        <p class="procedure-underway__item-text">
+          Анализируем кость, прикус,<br />
+          анатомические риски, моделируем<br />
+          протез в цифровой программе
+        </p>
+        <span class="procedure-underway__item-step">01</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">
+          Цифровой <br />
+          хирургический шаблон
+        </h4>
+        <p class="procedure-underway__item-text">
+          С его помощью установка идёт<br />
+          без разрезов и на 100% по плану
+        </p>
+        <span class="procedure-underway__item-step">02</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">
+          Установка импланта<br />
+          под местной анестезией
+        </h4>
+        <p class="procedure-underway__item-text">
+          Без боли и дискомфорта,<br />
+          в стерильных условиях и под<br />
+          контролем оборудования
+        </p>
+        <span class="procedure-underway__item-step">03</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">
+          Временная коронка <br />
+          (при возможности <br />
+          немедленной нагрузки)
+        </h4>
+        <p class="procedure-underway__item-text">
+          Естесственная улыбка <br />
+          и комфорт — сразу после<br />
+          установки
+        </p>
+        <span class="procedure-underway__item-step">04</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">
+          Установка постоянной<br />
+          коронки и финальный<br />
+          контроль
+        </h4>
+        <p class="procedure-underway__item-text">
+          Изготавливаем индивидуальную<br />
+          коронку, которая повторяет<br />
+          форму, цвет и прозрачность<br />
+          соседних зубов
+        </p>
+        <span class="procedure-underway__item-step">05</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item">
+        <h4 class="procedure-underway__item-title">Контроль лечащего врача</h4>
+        <p class="procedure-underway__item-text">
+          Бесплатные регулярные осмотры<br />
+          каждые несколько месяцев для<br />
+          контроля состояния
+        </p>
+        <span class="procedure-underway__item-step">06</span>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+      <div class="procedure-underway__item procedure-underway__item--callback">
+        <h4 class="procedure-underway__item-title">
+          Получите бесплатную<br />
+          консультацию по услуге
+        </h4>
+        <div class="procedure-underway__item-info">
+          <p class="procedure-underway__item-text">
+            <span>+</span> промокод на бесплатную<br />
+            полную диагностику:
+          </p>
+          <p class="procedure-underway__item-text">
+            3D-снимок + ОПТГ + анализ<br />
+            искусственным интеллектом <br />
+            + 3 плана лечения <span>за 0 руб.</span>
+          </p>
+        </div>
+        <a
+          class="procedure-underway__item-btn _main-btn"
+          href="#callback"
+          data-fancybox
+        >
+          Получить консультацию<br />
+          + промокод на диагностику
+        </a>
+        <svg width="229" height="230" viewBox="0 0 229 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.05" d="M85.1199 230L91.1607 156.169L29.6547 198.162L0 147.112L66.9976 115.274L0 83.4368L29.6547 31.8377L91.1607 73.8305L85.1199 0H143.88L138.388 73.8305L199.894 31.8377L229 83.4368L162.552 115.274L229 147.112L199.894 198.162L138.388 156.169L143.88 230H85.1199Z" fill="#7BC486"/>
+</svg>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+  <div class="divider"></div> 
   <section class="reviews">
   <img
     src="images/reviews-bg.webp"
@@ -820,7 +1535,7 @@
     </div>
   </div>
 </section>
-
+ 
   <section class="place _section-md">
   <div class="container">
     <div class="place__top">
@@ -1068,7 +1783,7 @@
     </div>
   </div>
 </section>
-
+ 
   <section class="map-block">
   <div class="container">
     <h2 class="map-block__title _title-2">
@@ -1198,7 +1913,7 @@
   </div>
 </div>
 
-  <section class="diagnostics _section-lg">
+  <section class="diagnostics _section-lg bg-man">
   <div class="container">
     <div class="diagnostics__inner">
       <p class="diagnostics__suptitle">
