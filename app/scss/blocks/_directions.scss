@@ -162,22 +162,4 @@
       font-size: 12px;
     }
   }
-  &__button{
-    max-width: 380px;
-    font-size: 18px;
-    margin: 70px auto 0;
-
-    @include xl {
-        margin-top: 50px;
-    }
-    @include lg {
-        margin-top: 35px;
-    }
-    @include md {
-        margin-top: 25px;
-    }
-    @include sm {
-        margin-top: 20px;
-    }
-  }
 }

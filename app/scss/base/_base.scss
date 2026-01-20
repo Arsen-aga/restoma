@@ -402,13 +402,35 @@ a {
 }
 
 ._loading-btn {
+  max-width: 380px;
+  font-size: 18px;
   background-color: var(--light-color);
   color: var(--default-color);
   border: 1px solid var(--black-transparent-color);
   box-shadow: none;
+  margin: 70px auto 0;
+  @include xl {
+    margin-top: 50px;
+  }
+  @include lg {
+    margin-top: 35px;
+  }
+  @include md {
+    margin-top: 25px;
+  }
+  @include sm {
+    margin-top: 20px;
+  }
 
   @include hover {
-    background-color: var(--accent-hover);
+    background-color: var(--primary-hover);
+    color: var(--light-color);
+
+    svg{
+      path{
+        fill: var(--light-color)
+      }
+    }
   }
 }
 
@@ -753,15 +775,11 @@ a {
   line-height: 0;
 }
 
-.loader-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .spinner {
-  animation: elegantSpin 3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  animation: elegantSpin 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   transform-origin: center;
+  transition: all 0.3s ease-in-out;
+  will-change: transform, opacity; /* Улучшает производительность */
 }
 
 @keyframes elegantSpin {
@@ -769,19 +787,23 @@ a {
     transform: rotate(0deg) scale(1);
     opacity: 0.8;
   }
+  25% {
+    transform: rotate(90deg) scale(1.02); /* Более плавное масштабирование */
+    opacity: 0.9;
+  }
   50% {
     transform: rotate(180deg) scale(1.1);
     opacity: 1;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.1)); /* Добавляем глубины */
+  }
+  75% {
+    transform: rotate(270deg) scale(1.02); /* Симметрично с 25% */
+    opacity: 0.9;
   }
   100% {
     transform: rotate(360deg) scale(1);
     opacity: 0.8;
   }
-}
-
-/* Для темного фона */
-.dark .spinner path {
-  fill: white;
 }
 
 /* Адаптация */
