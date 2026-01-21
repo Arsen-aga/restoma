@@ -47,28 +47,29 @@ new Swiper(".reviews__swiper", {
     },
   },
 });
-
-new Swiper(".pasting__swiper", {
+new Swiper(".team__swiper", {
   slidesPerView: 1,
-  spaceBetween: 20,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
+  spaceBetween: 15,
+  navigation: {
+  nextEl: ".team__wrapper .swiper-button-next",
+  prevEl: ".team__wrapper .swiper-button-prev",
+},
+  mousewheel: {
+    enabled: true,
+    eventsTarget: ".team__swiper", // или 'container'
+    forceToAxis: true, // только горизонтальная прокрутка
   },
-  breakpoints: {
-    1230: {
-      slidesPerView: 2.77,
+  touchEventsTarget: "container",
+    breakpoints: {
+    575.98: {
+      slidesPerView: 2,
+      spaceBetween: 15,
     },
     991.8: {
-      slidesPerView: 2.3,
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
-    767.98: {
-      slidesPerView: 2,
-    },
-    468: {
-      slidesPerView: 1.6,
-    },
-  },
+    }
 });
 new Swiper(".technological-approach__swiper", {
   loop: false,
