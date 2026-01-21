@@ -1,5 +1,5 @@
 .front-block-home {
-  background-image: url(../images/front-block-home.webp);
+  background-image: url(../images/front-block-doctors.webp);
   padding: 223px 0 133px;
   position: relative;
   border-radius: 0 0 150px 150px;
@@ -150,6 +150,9 @@
     text-decoration: underline;
     text-underline-offset: 3px;
     transition: all 0.3s ease-in-out;
+    @include sm {
+        font-size: 16px;
+    }
   }
 
   &__slogan {
