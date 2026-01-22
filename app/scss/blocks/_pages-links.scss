@@ -1,6 +1,23 @@
 .pages-links {
   padding-top: var(--indent);
 
+  &.pages-links-gray{
+    margin-top: var(--indent);
+    padding-bottom: 238px;
+    background-color: #F8F8F8;
+    position: relative;
+    @include xl {
+        padding-bottom: 200px;
+    }
+
+    @include lg {
+        padding-bottom: 150px;
+    }
+    @include md {
+        padding-bottom: 100px;
+    }
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,6 +89,18 @@
 
     @include sm {
       height: 65px;
+    }
+  }
+
+  &__logo{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91.3542%;
+
+    @include lg {
+        bottom: 20px;
     }
   }
 }

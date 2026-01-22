@@ -1,6 +1,6 @@
-.front-block-blogs {
+.front-block-blog {
   background-image: url(../images/front-block-blogs.webp);
-  padding: 270px 0;
+  padding: 270px 0 170px;
   position: relative;
 
   @include xl {
@@ -22,65 +22,70 @@
   }
 
   &__inner {
-    position: relative;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 
     @include xl {
       margin-top: 40px;
     }
     @include lg {
       margin-top: 30px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   &__title {
-    margin: 50px 0;
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    margin-bottom: 0px;
+  }
 
+  &__subtitle {
+    margin-bottom: 50px;
     @include xl {
-      margin: 40px 0;
+      margin-bottom: 40px;
     }
     @include lg {
-      margin: 30px 0;
+      margin-bottom: 30px;
     }
     @include md {
       margin-bottom: 20px;
       width: fit-content;
     }
     @include sm {
-      margin: 30px 0 15px;
-    }
-
-    svg {
-      max-width: 116px;
-      height: fit-content;
-
-      @include lg {
-        max-width: 90px;
-      }
-      @include sm {
-        max-width: 70px;
-      }
-      path {
-        fill: var(--blue-color);
-      }
+      margin-bottom: 15px;
     }
   }
 
   &__right {
-    position: absolute;
-    right: 0;
-    top: -119px;
-    width: 45.25%;
+    max-width: 500px;
+    width: 100%;
+    height: unset;
 
     @include xl {
-      width: 37%;
-      top: -60px;
+      max-width: 320px;
     }
     @include lg {
-      display: none;
+        max-width: 500px;
+        margin: 0 auto;
     }
+    @include md {
+      max-width: none;
+    }
+  }
+
+  &__right-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    @include lg {
+        padding-bottom: 69%;
+    }
+
+
   }
 }
