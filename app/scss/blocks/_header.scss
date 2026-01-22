@@ -12,13 +12,13 @@
       padding: 10px 0;
     }
 
-    .search-btn{
+    .search-btn {
       display: none;
 
       @include lg {
-          position: absolute;
-          right: 25px;
-          display: flex;
+        position: absolute;
+        right: 25px;
+        display: flex;
       }
     }
   }
@@ -37,7 +37,7 @@
     }
 
     @include xs {
-        max-width: 70px;
+      max-width: 70px;
     }
     &__text {
       @include lg {
@@ -46,14 +46,14 @@
     }
   }
 
-  .geo{
+  .geo {
     @include md {
-        display: none;
+      display: none;
     }
   }
-  .social-block{
+  .social-block {
     @include sm {
-        display: none;
+      display: none;
     }
   }
 
@@ -75,9 +75,9 @@
     }
   }
 
-  &__bottom{
+  &__bottom {
     @include lg {
-        display: none;
+      display: none;
     }
   }
 
@@ -110,7 +110,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-
+    cursor: pointer;
     &:hover {
       scale: 1.1;
       background-color: var(--accent-hover);
