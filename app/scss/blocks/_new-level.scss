@@ -4,6 +4,16 @@
   border-radius: 30px;
   background-image: url(../images/new-level-bg.webp);
 
+  &.new-level-no-bg{
+    background: none;
+    margin: 0;
+    padding: var(--indent) 0 0;
+
+    .new-level__item{
+      background-color: #FBFBFB;
+    }
+  }
+
   @include md {
       border-radius: 24px;
   }
