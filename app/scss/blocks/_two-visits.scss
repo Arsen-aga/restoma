@@ -1,0 +1,255 @@
+.two-visits {
+  padding-top: var(--indent);
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: -16%;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__visit {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include xl {
+      display: block;
+    }
+  }
+
+  &__visit-left {
+    @include xl {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__visit-suptitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background: var(--accent);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(22 / 14 * 100%);
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 10px;
+    width: fit-content;
+
+    @include md {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__visit-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(40 / 32 * 100%);
+
+    @include md {
+      font-size: 26px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 955px;
+    width: 100%;
+    @include xl {
+      gap: 10px;
+    }
+    @include lg {
+      gap: 10px;
+      padding-bottom: 10px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+    }
+  }
+  &__item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 600px;
+
+    @include lg {
+      height: 450px;
+      border-radius: 16px;
+      width: 300px;
+      .overlay {
+        display: block;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+    }
+
+    &.small {
+      height: 540px;
+      @include lg {
+        height: 450px;
+      }
+      @include sm {
+        height: 400px;
+      }
+    }
+    @include sm {
+      width: 280px;
+      height: 400px;
+    }
+  }
+  &__item-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 35px 28px;
+
+    @include lg {
+      padding: 25px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(32 / 24 * 100%);
+
+    @include lg {
+      font-size: 22px;
+    }
+    @include md {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    margin-top: 15px;
+
+    @include lg {
+      margin-top: 10px;
+    }
+    @include md {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
+
+  &__item-list {
+    margin-top: 10px;
+    display: grid;
+    gap: 5px;
+    @include lg {
+      margin-top: 5px;
+    }
+    @include md {
+      font-size: 16px;
+    }
+    @include sm {
+        gap: 0;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-radius: 20px;
+    padding: 100px 80px;
+    margin: 20px 0 50px;
+
+    @include xl {
+        padding: 80px 60px;
+    }
+    @include lg {
+        padding: 60px 40px;
+    }
+
+    @include sm {
+        padding: 40px;
+        br{display: none;}
+    }
+  }
+
+  &__inner-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(40 / 32 * 100%);
+
+    @include xl {
+        font-size: 28px;
+    }
+
+    @include lg {
+        font-size: 26px;
+    }
+
+    @include md {
+        font-size: 24px;
+    }
+
+    @include sm {
+        font-size: 22px;
+    }
+
+    span {
+      color: var(--blue-color);
+    }
+  }
+
+  &__inner-text {
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: calc(30 / 22 * 100%);
+
+    @include xl {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    @include sm {
+        font-size: 18px;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__inner-img {
+    position: absolute;
+    width: 44.796%;
+    bottom: 0;
+    right: 88px;
+
+    @include xl {
+        right: 40px;
+    }
+    @include lg {
+        display: none;
+    }
+  }
+
+  .world-implants {
+    padding-top: 50px;
+
+    @include lg {
+      padding-top: var(--indent);
+    }
+  }
+}
