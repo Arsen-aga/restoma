@@ -1949,6 +1949,741 @@
 
 </section>
 
+  <section class="quiz-wrapper _image-wrapper">
+  <div class="container">
+    <h2 class="quiz-wrapper__title _title-2">
+      Получите план лечения со стоимостью,<br />
+      ответив на 4 вопроса <span>+ подарок на выбор:</span>
+    </h2>
+    <div class="quiz-wrapper__items">
+      <div class="quiz-wrapper__item">
+        <div class="quiz-wrapper__item-wrapper">
+          <img
+            class="quiz-wrapper__item-img"
+            src="images/quiz-wrapper-1.webp"
+            alt="quiz-wrapper-1"
+          />
+        </div>
+        <h4 class="quiz-wrapper__item-title">
+          удаление до 3-х<br />
+          зубов бесплатно
+        </h4>
+      </div>
+      <div class="quiz-wrapper__item">
+        <div class="quiz-wrapper__item-wrapper">
+          <img
+            class="quiz-wrapper__item-img"
+            src="images/quiz-wrapper-2.webp"
+            alt="quiz-wrapper-2"
+          />
+        </div>
+        <h4 class="quiz-wrapper__item-title">
+          скидка 10 000 руб.<br />
+          на лечение
+        </h4>
+      </div>
+    </div>
+    <form
+      class="quiz form-submit"
+      action="#"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="hidden"
+        name="from"
+        value="Получите план лечения со стоимостью, ответив на 4 вопроса + подарок на выбор:"
+      />
+      <input
+        type="hidden"
+        name="newToken"
+        value="<?php echo (rand(10000, 99999)) ?>"
+      />
+      <div class="progress-bar">
+        <div class="progress-line">
+          <div class="line" data-line></div>
+        </div>
+        <div class="progress-text">
+          <div class="progress-text__inner">
+            <span class="first-word">Осталось</span>
+            <span class="current-step">5</span>
+            <span class="current-text">вопросов</span> из
+            <span class="max-step">5</span>
+          </div>
+        </div>
+      </div>
+      <div class="step__wrapper">
+        <div class="step active" data-step="1">
+          <h3 class="step__title">01. Какое у вас состояние полости рта?</h3>
+          <div class="step__variants col-4">
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-1"
+                class="hidden"
+                value="Потеря 4-10 зубов"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-1.webp"
+                    alt="quiz-1"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title">Потеря 4-10 зубов</span>
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-1"
+                class="hidden"
+                value="Потеряно большинство зубов"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-2.webp"
+                    alt="quiz-2"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title">
+                    Потеряно большинство<br />
+                    зубов
+                  </span>
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-1"
+                class="hidden"
+                value="Полная потеря зубов"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-3.webp"
+                    alt="quiz-3"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title"
+                    >Полная потеря зубов</span
+                  >
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-1"
+                class="hidden"
+                value="Затрудняюсь ответить"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-4.webp"
+                    alt="quiz-4"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title"
+                    >Затрудняюсь ответить</span
+                  >
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="step" data-step="2">
+          <h3 class="step__title">
+            02. На какие челюсти вы хотели бы установить зубы?
+          </h3>
+          <div class="step__variants col-4">
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-2"
+                class="hidden"
+                value="На верхнюю челюсть"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-5.webp"
+                    alt="quiz-5"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title">На верхнюю челюсть</span>
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-2"
+                class="hidden"
+                value="На нижнюю челюсть"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-5.webp"
+                    alt="quiz-5"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title">
+                    На нижнюю челюсть
+                  </span>
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-2"
+                class="hidden"
+                value="На обе челюсти"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-6.webp"
+                    alt="quiz-6"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title">На обе челюсти</span>
+                </span>
+              </span>
+            </label>
+            <label class="variant variant-picture">
+              <input
+                type="radio"
+                name="quest-2"
+                class="hidden"
+                value="Затрудняюсь ответить"
+              />
+              <span class="variant-picture__content">
+                <span class="variant-picture__wrapper">
+                  <img
+                    class="variant-picture__img _img"
+                    src="images/quiz-4.webp"
+                    alt="quiz-4"
+                  />
+                </span>
+                <span class="variant-picture__info">
+                  <span class="step__icon">
+                    <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                  </span>
+                  <span class="variant-picture__title"
+                    >Затрудняюсь ответить</span
+                  >
+                </span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <h3 class="step__title">
+            03. Когда вы хотели бы провести полную имплантацию?
+          </h3>
+          <div class="step__variants col-4">
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-3"
+                class="hidden"
+                value="В ближайшее время"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >В ближайшее<br />
+                  время</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-3"
+                class="hidden"
+                value="В течение месяца"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >В течение<br />
+                  месяца</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-3"
+                class="hidden"
+                value="Через месяц или более"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >Через месяц<br />
+                  или более</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-3"
+                class="hidden"
+                value="Затрудняюсь ответить"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >Затрудняюсь<br />
+                  ответить</span
+                >
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <h3 class="step__title">04. Выберите подарок за прохождение теста</h3>
+          <div class="step__variants col-3">
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="удаление до 3-х зубов бесплатно"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >удаление до 3-х зубов<br />
+                  бесплатно</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="скидка 10 000 руб. на лечение"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >скидка 10 000 руб.<br>
+на лечение</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="выберу подарок позже"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >выберу подарок позже</span
+                >
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="step last-step" data-step="5">
+          <h3 class="step__title">04. Выберите подарок за прохождение теста</h3>
+          <div class="step__variants col-3">
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="удаление до 3-х зубов бесплатно"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >удаление до 3-х зубов<br />
+                  бесплатно</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="скидка 10 000 руб. на лечение"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >скидка 10 000 руб.<br>
+на лечение</span
+                >
+              </span>
+            </label>
+            <label class="variant">
+              <input
+                type="radio"
+                name="quest-4"
+                class="hidden"
+                value="выберу подарок позже"
+              />
+              <span class="variant__info">
+                <span class="step__icon">
+                  <svg
+  width="13"
+  height="11"
+  viewBox="0 0 13 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297"
+    stroke="#B3BBC1"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
+                </span>
+                <span class="variant__title"
+                  >выберу подарок позже</span
+                >
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__footer">
+        <div class="quiz__btns">
+          <button
+            type="button"
+            class="quiz__btn _main-btn"
+            data-step-btn="next"
+          >
+            На следующий шаг
+            <svg
+              width="26"
+              height="9"
+              viewBox="0 0 26 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2058_8462)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
+                  fill="#ffffff"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2058_8462">
+                  <rect width="26" height="9" fill="#ffffff" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="quiz__btn _main-btn"
+            data-step-btn="prev"
+          >
+            Назад
+          </button>
+        </div>
+        <p class="needs-select">Пожалуйста, выберите вариант ответа</p>
+      </div>
+    </form>
+  </div>
+</section>
+
   <section class="result" id="result">
   <div class="container">
     <h2 class="result__title _title-2">Результат после процедуры</h2>
@@ -2140,7 +2875,8 @@
 </section>
 
   <section class="team" id="team">
-  <div class="container">
+  <div class="overlay"></div>
+  <div class="container relative">
     <h2 class="team__title _title-2">
       Проводить ваше лечение будут<br />
       <span>опытнейшие стоматологи</span> Москвы
@@ -3935,399 +4671,7 @@
 
   </form>
 </div>
-<div class="popup quiz" id="quiz" style="display: none;">
-  <div class="quiz__inner">
-    <div class="quiz__left">
-      <div class="quiz__left-wrapper">
-        <img class="quiz__left-img _img" src="images/quiz-left.webp" alt="quiz-left">
-      </div>
-    </div>
-    <form class="quiz-block quiz__form form-submit" action="#" method="POST" enctype="multipart/form-data">
-      <input type="hidden" name="from" value="Получить экспертный подбор агродрона">
-      <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
-      <div class="progress-bar">
-        <div class="quiz-progress__line progress-line">
-          <div class="line" style="left: -80.5%;" data-left="80.5"></div>
-        </div>
-        <div class="progress-text">
-          <div class="progress-text__inner">
-            <span class="progress-text__first-word">Осталось</span> <span class="current-step">3</span>
-            <span class="rp-rule__span">вопроса</span> из 3
-          </div>
-        </div>
-      </div>
-      <div class="step step1 active">
-        <h2 class="quiz-step__title ">
-          01. Для каких целей вы<br>
-          хотите оклеить автомобиль?
-        </h2>
-        <div class="step__inner">
-          <div class="step__body">
-            <div class="quiz-list">
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-1" class="hidden" value="Новый авто, хочется сохранить в идеале">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Новый авто, хочется<br>
-                      сохранить в идеале
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-1" class="hidden"
-                    value="Машина в хорошем состоянии, хочу обновить облик/защитить покрытие">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Машина в хорошем<br>
-                      состоянии, хочу обновить<br>
-                      облик/защитить покрытие
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-1" class="hidden"
-                    value="Есть мелкие царапины, нужна защита и «освежение»">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Есть мелкие <br>
-                      царапины, нужна защита <br>
-                      и «освежение»
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-1" class="hidden" value="Затрудняюсь ответить">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Затрудняюсь ответить
-                    </h6>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="quiz-footer">
-          <div class="quiz-footer__btns">
-            <button type="button" class="quiz-btn next-step _main-btn">
-              На следующий шаг
-              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2058_8462)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
-                    fill="#ffffff" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2058_8462">
-                    <rect width="26" height="9" fill="#ffffff" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-        </div>
-      </div>
-      <div class="step step2 ">
-        <h2 class="quiz-step__title ">
-          02. Какой вид оклейки<br>
-          вас интересует?
-        </h2>
-        <div class="step__inner">
-          <div class="step__body">
-            <div class="quiz-list">
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-2" class="hidden" value="Полная оклейка автомобиля">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Полная оклейка<br>
-                      автомобиля
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-2" class="hidden" value="Защита зон риска: капот, бампер, фары и пр.">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Защита зон риска:<br>
-                      капот, бампер, фары и пр.
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-2" class="hidden"
-                    value="Убрать хром, сделать матовый или агрессивный стиль">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Убрать хром, сделать
-                      матовый или агрессивный
-                      стиль
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-2" class="hidden" value="Затрудняюсь ответить">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Затрудняюсь ответить
-                    </h6>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="quiz-footer">
-          <div class="quiz-footer__btns">
-            <button type="button" class="quiz-btn next-step _main-btn">
-              На следующий шаг
-              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2058_8462)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
-                    fill="#ffffff" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2058_8462">
-                    <rect width="26" height="9" fill="#ffffff" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-        </div>
-      </div>
-      <div class="step step3 ">
-        <h2 class="quiz-step__title ">
-          03. Когда вы хотели бы<br>
-          провести оклейку?
-        </h2>
-        <div class="step__inner">
-          <div class="step__body">
-            <div class="quiz-list">
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-3" class="hidden" value="В ближайшее время">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      В ближайшее время
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-3" class="hidden" value="В течение месяца">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      В течение месяца
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-3" class="hidden" value="Через месяц или более">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Через месяц или более
-                    </h6>
-                  </div>
-                </label>
-              </div>
-              <div class="quiz-list__item variant">
-                <label class="quiz-list__option">
-                  <input type="radio" name="quest-3" class="hidden" value="Затрудняюсь ответить">
-                  <span class="quiz-list__icon">
-                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.24097 5.49197L4.90497 8.15397L10.766 2.29297" stroke="#B3BBC1" stroke-width="3"
-                        stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <div class="quiz-list__option-info">
-                    <h6 class="quiz-list__option-title">
-                      Затрудняюсь ответить
-                    </h6>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="quiz-footer">
-          <div class="quiz-footer__btns">
-            <button type="button" class="quiz-btn next-step _main-btn">
-              На следующий шаг
-              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2058_8462)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M22.1285 8.26744L20.7845 6.92344L23.4085 4.39544L20.7845 1.86844L22.1285 0.523438L26.0005 4.39544L22.1285 8.26744ZM10.4645 6.92344L13.0885 4.39544L10.4645 1.86844L11.8085 0.523438L15.6805 4.39544L11.8085 8.26744L10.4645 6.92344ZM0.144531 6.92344L2.76853 4.39544L0.144531 1.86844L1.48853 0.523438L5.36053 4.39544L1.48853 8.26744L0.144531 6.92344Z"
-                    fill="#ffffff" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2058_8462">
-                    <rect width="26" height="9" fill="#ffffff" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-          <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-        </div>
-      </div>
-      <div class="step step4 quiz-block__last-step last-step ">
-        <h2 class="last-step__title">
-          Спасибо за ответы! Специалист уже приступил<br>
-          к формированию стоимости
-        </h2>
-        <p class="last-step__subtitle">
-          Оставьте контакты и получите:
-        </p>
-        <div class="last-step__items">
-          <div class="last-step__item">
-            
-            <p class="last-step__item-text">
-              стоимость оклейки по выбранным параметрам
-            </p>
-          </div>
-          <div class="last-step__item">
-            
-            <p class="last-step__item-text">
-              <span>подарок:</span> защита фар при з аказе любого вида оклейки
-            </p>
-          </div>
-        </div>
-        <div class="last-step__form-inner">
-          <p class="form__text">
-            Каким способом вам удобнее получить<br> информацию от специалиста?
-          </p>
-          <div class="form__labels">
-            <label class="form__label last-step__label">
-              <input type="radio" name="call" value="Телефон">
-              <span class="form__label-inner last-step__label-inner phone">
-                <span class="form__label-text last-step__label-text">
-                  Телефон
-                </span>
-                
-              </span>
-            </label>
-            <label class="form__label last-step__label">
-              <input type="radio" name="call" value="WhatsApp" checked>
-              <span class="form__label-inner last-step__label-inner whatsapp">
-                <span class="form__label-text last-step__label-text">
-                  WhatsApp
-                </span>
-                
-              </span>
-            </label>
-          </div>
-          <div class="form__bottom">
-            <div class="form__inputs">
-              <input class="_input" type="tel" name="phone" placeholder="Введите номер телефона" required>
-              <button type="submit" class="form__btn _main-btn">
-                Получить расчет<br>
-                стоимости + подарок
-              </button>
-            </div>
-          </div>
-          <label class="checkbox-block form__checkbox">
-            <input type="checkbox" name="access" required checked>
-            <span class="checkbox-block__check">
-              
-            </span>
-            <span class="checkbox-block__text">
-              Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
-                конфиденциальности</a>
-            </span>
-          </label>
-        </div>
-        <img class="last-step__img" src="images/quiz-phone.webp" alt="quiz-phone">
-      </div>
-    </form>
 
-  </div>
-</div>
 
 
 <div class="popup" id="consultation-change" style="display: none;">

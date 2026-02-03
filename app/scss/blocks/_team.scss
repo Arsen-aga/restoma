@@ -3,21 +3,54 @@
   padding-top: var(--indent);
   background-image: url(../images/team-bg.webp);
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  position: relative;
+
+  
+  
+  @include xl {
+    background-size: 145%;
+  }
+  
+  @include xs {
+    background-image: url(../images/team-bg.webp);
+    .overlay{
+      display: block;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
 
   &__title {
     margin-bottom: 816px;
-  }
 
-  &__wrapper{
-    margin-top: 50px;
     @include xl {
-        margin-top: 40px;
+      margin-bottom: 500px;
     }
     @include lg {
-        margin-top: 30px;
+      margin-bottom: 350px;
     }
     @include md {
-        margin-top: 20px;
+      margin-bottom: 300px;
+    }
+    @include sm {
+        margin-bottom: 150px;
+    }
+    @include xs {
+        margin-bottom: 100px;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    @include xl {
+      margin-top: 40px;
+    }
+    @include lg {
+      margin-top: 30px;
+    }
+    @include md {
+      margin-top: 20px;
     }
   }
 
@@ -37,15 +70,14 @@
     }
   }
 
-  &__swiper{
+  &__swiper {
     overflow: visible;
   }
 
-  &__slide{
+  &__slide {
     height: unset;
   }
-  .doctors__item{
+  .doctors__item {
     height: 100%;
   }
-
 }

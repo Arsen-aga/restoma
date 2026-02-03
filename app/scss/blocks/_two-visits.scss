@@ -180,6 +180,9 @@
     @include lg {
         padding: 60px 40px;
     }
+    @include md {
+        margin: 20px 0 40px;
+    }
 
     @include sm {
         padding: 40px;
