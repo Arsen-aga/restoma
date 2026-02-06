@@ -71,6 +71,42 @@
     ],
     "description": "xs"
   },
+  "hover": {
+    "scope": "css,scss",
+    "prefix": "@hover",
+    "body": [
+      "@include hover {",
+      "    ${1}",
+      "}"
+    ],
+    "description": "hover"
+  },
+  "grid-cols": {
+    "scope": "css,scss",
+    "prefix": "grid-cols",
+    "body": [
+      "&__items {",
+      "  display: grid;",
+      "  grid-template-columns: repeat(3, 1fr);",
+      "  gap: 30px;",
+      "  @include xl {",
+      "    gap: 15px;",
+      "  }",
+      "  @include lg {",
+      "    gap: 10px;",
+      "    padding-bottom: 10px;",
+      "    grid-auto-flow: column;",
+      "    overflow-x: auto;",
+      "  }",
+      "}",
+      "&__item {",
+      "  @include lg {",
+      "    width: 300px;",
+      "  }",
+      "}",
+    ],
+    "description": "grid-cols"
+  },
   /* CSS, SCSS snippets */
   "bgimg: Background image": {
     "scope": "css,scss",
@@ -221,16 +257,41 @@
     "description": "btn: CSS Button class"
   },
   "HTML section": {
+    "scope": "html",
     "prefix": "sect",
     "body": [
       "<section class=\"${1:example}\">",
 			"	<div class=\"container\">",
-			"		<h2 class=\"${1:example}__title\">${2:title}</h2>",
-			"		<div class=\"${1:example}__${3:inner}\">",
-			"			${4:Content}",
+			"		<h2 class=\"${1:example}__title _title\">${2:title}</h2>",
+			"		<p class=\"${1:example}__subtitle _subtitle\">${2:subtitle}</p>",
+			"		<div class=\"${1:example}__inner\">",
+			"			Content",
+			"		</div>",
+			"		@@include('../components/cursor.html')",
+			"		<div class=\"${1:example}__items\">",
+			"		  <div class=\"${1:example}__item\">",
+			"			  Content",
+			"		  </div>",
 			"		</div>",
 			"	</div>",
       "</section>"
+    ],
+    "description": "HTML section"
+  },
+  "HTML swiper": {
+    "prefix": "swiper",
+    "body": [
+      "<div class=\"${1:example}__swiper swiper\">",
+			"	<div class=\"swiper-wrapper\">",
+			"		<div class=\"${1:example}__slide swiper-slide\">",
+			"			${4:Content}",
+			"		</div>",
+			"	</div>",
+      " <div class=\"swiper-pagination\"></div>",
+      " <div class=\"swiper-button-prev\"></div>",
+      " <div class=\"swiper-button-next\"></div>",
+      " <div class=\"swiper-scrollbar\"></div>",
+      "</div>"
     ],
     "description": "HTML section"
   },

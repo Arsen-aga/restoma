@@ -1,18 +1,56 @@
 ._title {
   font-family: var(--font-default);
-  text-align: center;
   font-weight: 400;
-  font-size: 60px;
-  line-height: calc(68/60*100%);
-  color: var(--light-color);
+  font-size: 58px;
+  line-height: calc(72 / 58 * 100%);
+  color: var(--default-color);
   margin-bottom: 50px;
 
-  span{
-    color: var(--accent);
+  span {
+    color: var(--blue-color);
+    font-weight: 500;
   }
 
   @include xl {
-    font-size: 42px;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  @include lg {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @include md {
+    font-size: 34px;
+    margin-bottom: 25px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include sm {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+._title-2 {
+  font-family: var(--font-default);
+  font-weight: 500;
+  font-size: 44px;
+  line-height: calc(52 / 44 * 100%);
+  color: var(--default-color);
+  text-align: center;
+  margin-bottom: 50px;
+
+  span {
+    color: var(--blue-color);
+  }
+
+  @include xl {
+    font-size: 40px;
     margin-bottom: 40px;
   }
 
@@ -24,7 +62,6 @@
   @include md {
     font-size: 30px;
     margin-bottom: 25px;
-
     br {
       display: none;
     }
@@ -34,31 +71,57 @@
     font-size: 26px;
     margin-bottom: 20px;
   }
-
 }
 
 ._subtitle {
   font-family: var(--font-default);
-  text-align: center;
   font-weight: 400;
-  font-size: 30px;
-  line-height: calc(38/30*100%);
-  color: var(--light-color);
-  margin: 20px 0 50px;
+  font-size: 28px;
+  line-height: calc(36 / 28 * 100%);
+  margin-top: 20px;
 
   @include xl {
-    font-size: 28px;
+      font-size: 26px;
+  }
+  @include lg {
+      font-size: 24px;
+  }
+
+  @include md {
+    margin-top: 15px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include sm {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  @include xs {
+    font-size: 20px;
+  }
+}
+._subtitle-1 {
+  font-family: var(--font-default);
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(32 / 24 * 100%);
+  margin: 15px 0 50px;
+
+  @include xl {
     margin-bottom: 40px;
   }
 
   @include lg {
-    font-size: 26px;
     margin-bottom: 30px;
   }
 
   @include md {
-    font-size: 24px;
-    margin: 15px 0 25px;
+    margin-bottom: 25px;
 
     br {
       display: none;
@@ -73,5 +136,4 @@
   @include xs {
     font-size: 20px;
   }
-
 }

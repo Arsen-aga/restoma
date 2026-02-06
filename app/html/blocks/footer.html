@@ -1,6 +1,105 @@
 <footer class="footer">
   <div class="container">
-    <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__top-menu">
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              Услуги
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+  Цены
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              Акции
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+  Врачи 
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              Портфолио
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+  Отзывы  
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              О стоматологии
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              Блог
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__menu-item footer__item-docs">
+            <h4 class="footer__docs">Документация</h4>
+            <div class="footer__docs-lists">
+              <ul class="footer__docs-list">
+                <li class="footer__docs-item">
+                  <a class="footer__docs-link" href="#">
+                    Лицензии и сертификаты
+                  </a>
+                </li>
+                <li class="footer__docs-item">
+                  <a class="footer__docs-link" href="#">
+                    Контакты контролирующих органов
+                  </a>
+                </li>
+                <li class="footer__docs-item">
+                  <a class="footer__docs-link" href="#">
+                    Правовые документы
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__docs-list">
+                <li class="footer__docs-item">
+                  <a class="footer__docs-link" href="#">
+                    Информация о медицинских работниках
+                  </a>
+                </li>
+                <li class="footer__docs-item">
+                  <a class="footer__docs-link" href="#">
+                    Политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-top">
+          @@include('../components/social-block.html')
+          @@include('../components/phone-block.html')
+        </div>
+        <div class="footer__right-btns">
+          @@include('../components/geo.html')
+          <a class="footer__right-link _main-btn" href="#callback" data-fancybox>
+            Записаться
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
       <a class="logo footer__logo" href="/">
         @@include('../../images/icons/logo.svg')
         <p class="logo__text">
@@ -8,22 +107,8 @@
           имплантации и протезирования
         </p>
       </a>
-      @@include('../components/geo.html', {"class": "footer__geo"})
-      <div class="footer__right social-block">
-        <div class="footer__social">
-          @@include('../components/social-block.html', {"class": "footer__social-block", "phone-class": "footer__phone"})
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="divider footer__divider"></div>
-  <div class="container">
-    <div class="footer__bottom">
-      <a class="footer__link _link-hover" href="#politics" data-fancybox>
-        Политика конфиденциальности
-      </a>
       <a class="footer__tfa" href="#" target="_blank">
-        <!-- @@include('../../images/icons/tfa.svg') -->
+        @@include('../../images/icons/tfa.svg')
         <span>Разработка сайта</span>
       </a>
     </div>

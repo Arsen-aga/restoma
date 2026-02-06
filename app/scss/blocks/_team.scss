@@ -1,0 +1,83 @@
+.team {
+  margin-top: var(--indent);
+  padding-top: var(--indent);
+  background-image: url(../images/team-bg.webp);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  position: relative;
+
+  
+  
+  @include xl {
+    background-size: 145%;
+  }
+  
+  @include xs {
+    background-image: url(../images/team-bg.webp);
+    .overlay{
+      display: block;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
+
+  &__title {
+    margin-bottom: 816px;
+
+    @include xl {
+      margin-bottom: 500px;
+    }
+    @include lg {
+      margin-bottom: 350px;
+    }
+    @include md {
+      margin-bottom: 300px;
+    }
+    @include sm {
+        margin-bottom: 150px;
+    }
+    @include xs {
+        margin-bottom: 100px;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    @include xl {
+      margin-top: 40px;
+    }
+    @include lg {
+      margin-top: 30px;
+    }
+    @include md {
+      margin-top: 20px;
+    }
+  }
+
+  &__wrapper-right {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    max-width: 90px;
+    height: 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: static;
+      margin: 0;
+    }
+  }
+
+  &__swiper {
+    overflow: visible;
+  }
+
+  &__slide {
+    height: unset;
+  }
+  .doctors__item {
+    height: 100%;
+  }
+}
