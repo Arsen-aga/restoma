@@ -19,6 +19,25 @@
     justify-content: space-between;
     gap: 15px;
   }
+  
+  .logo{
+    @include lg {
+        max-width: 84px;
+    }
+    &__text{
+      @include lg {
+          display: none;
+      }
+    }
+  }
+
+  .social-block{
+    &__text{
+      @include lg {
+          display: none;
+      }
+    }
+  }
 
   &__right {
     display: flex;

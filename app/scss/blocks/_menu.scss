@@ -1,4 +1,7 @@
 .menu {
+  @include lg {
+      display: none;
+  }
   &__list {
     display: flex;
     align-items: center;
