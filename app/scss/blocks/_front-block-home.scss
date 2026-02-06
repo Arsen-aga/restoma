@@ -10,11 +10,7 @@
   }
 
   @include lg {
-<<<<<<< HEAD
-    padding: 120px 0 80px;
-=======
     padding: 150px 0 80px;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     border-radius: 0 0 80px 80px;
   }
 
@@ -57,8 +53,6 @@
       font-size: 80px;
       text-align: left;
       margin-bottom: 15px;
-<<<<<<< HEAD
-=======
     }
     @include md {
       font-size: 58px;
@@ -70,7 +64,6 @@
     }
     @include xs {
       font-size: 40px;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     }
   }
 
@@ -83,8 +76,6 @@
     @include xl {
       font-size: 26px;
       margin-bottom: 30px;
-<<<<<<< HEAD
-=======
     }
     @include lg {
       font-size: 24px;
@@ -95,7 +86,6 @@
     }
     @include xs {
       font-size: 20px;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     }
   }
 
@@ -106,8 +96,6 @@
 
     @include xl {
       gap: 30px;
-<<<<<<< HEAD
-=======
     }
     @include lg {
       order: 1;
@@ -119,7 +107,6 @@
       gap: 10px;
       max-width: 350px;
       width: 100%;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     }
   }
 
@@ -179,10 +166,6 @@
     }
 
     @include xl {
-<<<<<<< HEAD
-      top: 70px;
-      right: -70px;
-=======
       top: 50px;
       right: -70px;
     }
@@ -193,7 +176,6 @@
       gap: 10px;
       flex-wrap: wrap;
       margin-bottom: 10px;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     }
   }
 
@@ -259,8 +241,6 @@
 
     @include xl {
       margin-top: 300px;
-<<<<<<< HEAD
-=======
     }
     @include lg {
       margin-top: 200px;
@@ -270,27 +250,18 @@
       margin-top: 100px;
       width: 65px;
       height: 65px;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     }
 
     &:hover {
       scale: 1.1;
       background-color: var(--primary);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
     svg {
       height: 12px;
       width: 21px;
 
       path {
-<<<<<<< HEAD
-        fill: #DDDDDD;
-=======
         fill: #dddddd;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
       }
     }
   }

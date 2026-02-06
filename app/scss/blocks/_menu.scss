@@ -1,10 +1,6 @@
 .menu {
   @include lg {
-<<<<<<< HEAD
-      display: none;
-=======
     display: none;
->>>>>>> ddb69b3810788a1160de2ae2ad964a242a81f9c3
   }
   &__list {
     display: flex;
