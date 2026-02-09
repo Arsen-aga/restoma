@@ -129,6 +129,7 @@
   }
 
   .variant-picture {
+    cursor: pointer;
     &:hover,
     &.active {
       .step__icon {
@@ -166,6 +167,7 @@
     }
   }
   .variant {
+    cursor: pointer;
     &:hover,
     &.active {
       .step__icon {

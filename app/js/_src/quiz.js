@@ -17,7 +17,8 @@ class Quiz {
     this.error = false;
     this.activeStep = this.steps[this.currentStep];
     this.variants = this.activeStep.querySelectorAll(".variant");
-    this.variantHandlers = new Map();
+
+    this.testCount = 0;
 
     this.init();
   }
@@ -26,8 +27,8 @@ class Quiz {
     this.initLine();
     this.changeHeightStepsWrapper();
     this.handleClick();
-    this.handleVariants();
     this.statePrevBtn();
+    this.stepsWrapper.addEventListener("click", (e) => this.handleWrapperClick(e));
   }
 
   // Progress Bar
@@ -89,24 +90,19 @@ class Quiz {
     this.nextBtn.addEventListener("click", () => this.nextStep());
   }
 
-  handleVariants() {
-    this.variants.forEach((variant) =>
-      variant.addEventListener("click", (e) => {
-        const handler = (e) => {
-          e.preventDefault();
-          this.handleVariant(variant);
-        };
-        variant.addEventListener("click", handler);
-        this.variantHandlers.set(variant, handler);
-      })
-    );
+  handleWrapperClick(e) {
+    const variant = e.target.closest(".variant");
+    if (!variant || !this.activeStep.contains(variant)) return;
+
+    e.preventDefault();
+    this.handleVariant(variant);
   }
   handleVariant(variant) {
     if (this.currentStep === this.steps.length - 1) return;
+    this.testCount++;
     this.resetAllVariantInStep();
     this.makeActiveVariant(variant);
-    this.validText.style.display = "none";
-    this.error = false;
+    this.error = false
     this.nextStep();
   }
 
@@ -145,11 +141,12 @@ class Quiz {
     });
     if (isValid) this.error = false;
     else this.error = true;
-    console.log("this.error", this.error);
   }
   prevStep() {
     if (this.currentStep === 0) return;
     this.resetAllVariantInStep();
+    this.error = false
+    this.stateValidText()
     this.currentStep--;
     this.changeStep();
   }
@@ -163,20 +160,7 @@ class Quiz {
 
   updateValues() {
     this.activeStep = this.steps[this.currentStep];
-    this.resetHandleVariants();
     this.variants = this.activeStep.querySelectorAll(".variant");
-    this.handleVariants();
-  }
-
-  resetHandleVariants() {
-    this.variants.forEach((variant) => {
-      const handler = this.variantHandlers.get(variant);
-      if (handler) {
-        variant.removeEventListener("click", handler);
-        this.variantHandlers.delete(variant);
-      }
-    }
-    );
   }
 
   choisStep() {
