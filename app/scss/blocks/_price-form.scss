@@ -141,7 +141,7 @@
       }
     }
     &:nth-child(even) {
-      .price-form__item-select,
+      .price-form__item-name,
       .price-form__item-price,
       .price-form__item-link {
         background-color: var(--light-color);
@@ -163,10 +163,15 @@
     color: var(--default-color);
     text-align: left;
   }
-  &__item-label {
+  &__item-name {
     border-radius: 8px;
+    padding: 13px 20px;
+    width: 100%;
     position: relative;
     cursor: pointer;
+    @include md {
+      background-color: var(--light-color);
+    }
     &::after {
       content: "";
       position: absolute;
@@ -182,22 +187,7 @@
       transform: translateY(-50%);
     }
   }
-  &__item-select {
-    padding: 13px 20px;
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
 
-    @include md {
-      background-color: var(--light-color);
-    }
-  }
 
   &__item-price {
     text-align: center;

@@ -273,7 +273,7 @@
           <h3 class="step__title">
             03. Когда вы хотели бы провести полную имплантацию?
           </h3>
-          <div class="step__variants col-4">
+          <div class="step__variants col-4-stroke">
             <div class="variant">
               <input
                 type="radio"
@@ -346,7 +346,7 @@
         </div>
         <div class="step" data-step="4">
           <h3 class="step__title">04. Выберите подарок за прохождение теста</h3>
-          <div class="step__variants col-3">
+          <div class="step__variants col-3-stroke">
             <div class="variant">
               <input
                 type="radio"
@@ -376,8 +376,8 @@
                   @@include('../../images/icons/check.svg')
                 </span>
                 <span class="variant__title"
-                  >скидка 10 000 руб.<br>
-на лечение</span
+                  >скидка 10 000 руб.<br />
+                  на лечение</span
                 >
               </span>
             </div>
@@ -392,65 +392,107 @@
                 <span class="step__icon">
                   @@include('../../images/icons/check.svg')
                 </span>
-                <span class="variant__title"
-                  >выберу подарок позже</span
-                >
+                <span class="variant__title">выберу подарок позже</span>
               </span>
             </div>
           </div>
         </div>
         <div class="step last-step" data-step="5">
-          <h3 class="step__title">04. Выберите подарок за прохождение теста</h3>
-          <div class="step__variants col-3">
-            <div class="variant">
-              <input
-                type="radio"
-                name="quest-4"
-                class="hidden"
-                value="удаление до 3-х зубов бесплатно"
-              />
-              <span class="variant__info">
-                <span class="step__icon">
-                  @@include('../../images/icons/check.svg')
-                </span>
-                <span class="variant__title"
-                  >удаление до 3-х зубов<br />
-                  бесплатно</span
-                >
-              </span>
+          <h3 class="last-step__title">
+            <span>Спасибо за ответы!</span> Стоматолог уже приступил<br />
+            к формированию предварительного плана лечения
+          </h3>
+          <p class="last-step__subtitle">Оставьте контакты и получите:</p>
+          <div class="last-step__items">
+            <div class="last-step__item">
+              <div class="last-step__item-icon">
+                @@include('../../images/icons/last-step-1.svg')
+              </div>
+              <p class="last-step__item-title">план лечения со стоимостью</p>
             </div>
-            <div class="variant">
-              <input
-                type="radio"
-                name="quest-4"
-                class="hidden"
-                value="скидка 10 000 руб. на лечение"
-              />
-              <span class="variant__info">
-                <span class="step__icon">
-                  @@include('../../images/icons/check.svg')
-                </span>
-                <span class="variant__title"
-                  >скидка 10 000 руб.<br>
-на лечение</span
-                >
-              </span>
+            <div class="last-step__item">
+              <div class="last-step__item-icon">
+                @@include('../../images/icons/last-step-2.svg')
+              </div>
+              <p class="last-step__item-title">
+                бесплатное комплексное обследование
+              </p>
             </div>
-            <div class="variant">
-              <input
-                type="radio"
-                name="quest-4"
-                class="hidden"
-                value="выберу подарок позже"
-              />
-              <span class="variant__info">
-                <span class="step__icon">
-                  @@include('../../images/icons/check.svg')
-                </span>
-                <span class="variant__title"
-                  >выберу подарок позже</span
+            <div class="last-step__item">
+              <div class="last-step__item-icon">
+                @@include('../../images/icons/last-step-3.svg')
+              </div>
+              <p class="last-step__item-title">
+                <strong>подарок:</strong>
+                <span class="quiz-gift"
+                  >*название подарка из прошлого вопроса*</span
                 >
-              </span>
+              </p>
+            </div>
+          </div>
+          <div class="last-step__form-inner">
+            <p class="form__text">
+              Каким способом вам удобнее получить информацию от стоматолога?
+            </p>
+            <div class="form__labels">
+              <label class="form__label last-step__label">
+                <input type="radio" name="call" value="Телефон" />
+                <span class="form__label-inner last-step__label-inner phone">
+                  <span class="form__label-text last-step__label-text">
+                    Телефон
+                  </span>
+                  @@include('../../images/icons/phone.svg')
+                </span>
+              </label>
+              <label class="form__label last-step__label">
+                <input type="radio" name="call" value="WhatsApp" checked />
+                <span class="form__label-inner last-step__label-inner whatsapp">
+                  <span class="form__label-text last-step__label-text">
+                    WhatsApp
+                  </span>
+                  @@include('../../images/icons/whatsapp.svg')
+                </span>
+              </label>
+              <label class="form__label last-step__label">
+                <input type="radio" name="call" value="Telegram" />
+                <span class="form__label-inner last-step__label-inner telegram">
+                  <span class="form__label-text last-step__label-text">
+                    Telegram
+                  </span>
+                  @@include('../../images/icons/telegram.svg')
+                </span>
+              </label>
+            </div>
+            <div class="last-step__bottom">
+              <div class="last-step__inputs">
+                <input
+                  class="_input last-step__inp"
+                  type="tel"
+                  name="phone"
+                  placeholder="Введите номер телефона"
+                  required
+                />
+                <button type="submit" class="last-step__btn _main-btn">
+                  Получить план лечения +<br />
+                  бесплатное обследование + подарок
+                </button>
+              </div>
+              <label class="checkbox-block">
+                <input type="checkbox" name="access" required checked />
+                <span class="checkbox-block__check">
+                  @@include('../../images/icons/checkbox.svg')
+                </span>
+                <span class="checkbox-block__text">
+                  Я принимаю условия
+                  <a
+                    data-fancybox=""
+                    class="_link"
+                    href="#politics"
+                    data-fancybox=""
+                    >политики конфиденциальности</a
+                  >
+                </span>
+              </label>
             </div>
           </div>
         </div>
@@ -485,16 +527,17 @@
               </defs>
             </svg>
           </button>
-          <button
+          <!-- <button
             type="button"
             class="quiz__btn _main-btn"
             data-step-btn="prev"
           >
             Назад
-          </button>
+          </button> -->
         </div>
         <p class="needs-select">Пожалуйста, выберите вариант ответа</p>
       </div>
+      <img class="last-step__img" src="images/last-step-img.webp" alt="last-step-img">
     </form>
   </div>
 </section>
